@@ -26,8 +26,9 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
   ![Inkscape](https://img.shields.io/badge/Inkscape-black?style=flat&logo=inkscape)
   
 - 🌱 I'm learning:
-  ![Coze](https://img.shields.io/badge/Coze-black?style=flat&logo=coze)
   ![Tauri](https://img.shields.io/badge/Tauri-black?style=flat&logo=tauri)
+  ![Rust](https://img.shields.io/badge/Rust-black?style=flat&logo=rust)
+  ![Coze](https://img.shields.io/badge/Coze-black?style=flat&logo=coze)
 
 - 📫 Make a friend? 🤝 go **hesprs@outlook.com**
 
