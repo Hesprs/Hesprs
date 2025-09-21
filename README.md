@@ -35,5 +35,5 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=hesprs&show_icons=true&theme=dark" style="height: 160px;"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesprs&layout=compact&theme=dark" style="height: 160px;"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesprs&layout=compact&theme=dark&hide=mdx" style="height: 160px;"/>
 </div>
