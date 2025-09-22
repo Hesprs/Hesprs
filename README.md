@@ -30,7 +30,7 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
   ![Rust](https://img.shields.io/badge/Rust-black?style=flat&logo=rust)
   ![Coze](https://img.shields.io/badge/Coze-black?style=flat&logo=coze)
 
-- 📫 New friend? 🤝 **hesprs@outlook.com**
+- 📫 New friend - **hesprs@outlook.com**
 
 <br>
 
