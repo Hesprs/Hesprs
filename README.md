@@ -1,6 +1,6 @@
-<h1 align="center">Hēsperus' README 🌟</h1>
+<h1 align="center">Hēsperus' README</h1>
 
-Turn **Ideality** to **Reality** &nbsp; ✦ &nbsp; Hēsperus &nbsp; ✦ &nbsp; 2025 <img src="https://komarev.com/ghpvc/?username=hesprs&style=flat" alt="Hesprs" align="right" />
+Turn **Ideality** to **Reality** <img src="https://komarev.com/ghpvc/?username=hesprs&style=flat" alt="Hesprs" align="right" />
 
 <br>
 
@@ -30,7 +30,7 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
   ![Rust](https://img.shields.io/badge/Rust-black?style=flat&logo=rust)
   ![Coze](https://img.shields.io/badge/Coze-black?style=flat&logo=coze)
 
-- 📫 Make a friend? 🤝 go **hesprs@outlook.com**
+- 📫 New friend? 🤝 **hesprs@outlook.com**
 
 <br>
 
@@ -38,3 +38,5 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
   <img src="https://github-readme-stats.vercel.app/api?username=hesprs&show_icons=true&theme=dark" style="height: 160px;"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesprs&layout=compact&theme=dark&hide=mdx" style="height: 160px;"/>
 </div>
+
+<div align="right">2025 • Hēsperus</div>
