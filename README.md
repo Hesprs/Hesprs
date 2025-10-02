@@ -28,7 +28,7 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
 - 🌱 I'm learning:
   ![Tauri](https://img.shields.io/badge/Tauri-black?style=flat&logo=tauri)
   ![Rust](https://img.shields.io/badge/Rust-black?style=flat&logo=rust)
-  ![Coze](https://img.shields.io/badge/Coze-black?style=flat&logo=coze)
+  ![n8n](https://img.shields.io/badge/n8n-black?style=flat&logo=n8n)
 
 - 📫 New friend - **hesprs@outlook.com**
 
