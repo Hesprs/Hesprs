@@ -1,0 +1,9 @@
+catppuccin.catppuccin-vsc-icons
+continue.continue
+dbaeumer.vscode-eslint
+miguelsolorio.fluent-icons
+ms-toolsai.jupyter
+sguerri.simple-hide-files
+esbenp.prettier-vscode
+ms-python.python
+streetsidesoftware.code-spell-checker
