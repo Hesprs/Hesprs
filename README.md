@@ -16,11 +16,11 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
   ![Python](https://img.shields.io/badge/Python-black?style=flat&logo=python)
 
 - 💻 I work with:
-  ![Fedora Linux](https://img.shields.io/badge/Fedora%20Linux-black?style=flat&logo=fedora)
+  ![NixOS](https://img.shields.io/badge/NixOS-black?style=flat&logo=nixos)
   ![Git](https://img.shields.io/badge/Git-black?style=flat&logo=git)
   ![Node.js](https://img.shields.io/badge/Node.js-black?style=flat&logo=nodedotjs)
   ![Obsidian](https://img.shields.io/badge/Obsidian-black?style=flat&logo=obsidian)
-  ![Windsurf](https://img.shields.io/badge/Windsurf-black?style=flat&logo=windsurf)
+  ![VSCodium](https://img.shields.io/badge/VSCodium-black?style=flat&logo=vscodium)
   ![Figma](https://img.shields.io/badge/Figma-black?style=flat&logo=figma)
   ![Blender](https://img.shields.io/badge/Blender-black?style=flat&logo=blender)
   ![Inkscape](https://img.shields.io/badge/Inkscape-black?style=flat&logo=inkscape)

@@ -5,7 +5,6 @@
   "workbench.iconTheme": "catppuccin-mocha",
   "editor.fontFamily": "'SF Mono'",
   "workbench.layoutControl.enabled": false,
-  "workbench.navigationControl.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.stickyScroll.enabled": false,
@@ -32,5 +31,10 @@
     "subfolders"
   ],
   "workbench.editor.editorActionsLocation": "hidden",
-  "terminal.integrated.stickyScroll.enabled": false
+  "terminal.integrated.stickyScroll.enabled": false,
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.navigationControl.enabled": false,
 }
