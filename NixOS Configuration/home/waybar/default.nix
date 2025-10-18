@@ -6,7 +6,7 @@
     systemd.enable = true;
 
     settings = {
-      style = builtins.readFile ./style.css;
+      style = builtins.readFile ./styles.css;
       main = {
         layer = "top";
         position = "top";

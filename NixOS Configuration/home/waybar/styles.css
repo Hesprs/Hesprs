@@ -1,48 +1,23 @@
-/* * Minimalist WayBar CSS
- * Designed for a clean, dark, and non-distracting aesthetic.
- * --------------------------------------------------------
- */
-
-/* =========================================================
- * 1. Global Bar Styling
- * ========================================================= */
 #waybar {
-    /* Background: A slightly dark, low-contrast color (Gruvbox Dark Palette) */
     background-color: rgba(40, 40, 40, 0.95);
-    color: #ebdbb2; /* Foreground text color (light yellow/beige) */
+    color: #ebdbb2;
     font-family: "Inter", "Sans-serif";
     font-size: 13px;
     font-weight: normal;
-
-    /* Crisp edges - removing default rounded corners */
     border-radius: 0;
-    
-    /* Remove any border for a cleaner look */
     border: none; 
 }
 
-/* =========================================================
- * 2. General Module Styling
- * ========================================================= */
 .module {
-    /* Reset padding, using margin for spacing */
     padding: 0 10px; 
-    
-    /* Remove module specific backgrounds for a monolithic bar look */
     background-color: transparent; 
 }
 
-/* =========================================================
- * 3. Workspaces (Left Side)
- * ========================================================= */
-
-/* Container for all workspaces */
 #workspaces {
     background-color: transparent;
     margin: 0 5px;
 }
 
-/* Style for individual workspace buttons */
 #workspaces button {
     padding: 0 10px;
     color: #b8bb26; /* Green for standard workspaces */
@@ -51,23 +26,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* Active workspace: highlighted text and a minimal bottom border */
 #workspaces button.focused {
     color: #fe8019; /* Orange for focused workspace */
     border-bottom: 2px solid #fe8019;
 }
 
-/* Occupied workspace (windows present, but not focused) */
 #workspaces button.urgent {
     /* Use a warning color for urgent windows */
     color: #cc241d; 
 }
 
-/* =========================================================
- * 4. System Status Modules (Right Side)
- * ========================================================= */
-
-/* General styling for battery, memory, temperature, etc. */
 #clock,
 #battery,
 #cpu,
@@ -82,8 +50,6 @@
     color: #ebdbb2; 
     margin-left: 5px; /* Minimal space between right-side modules */
 }
-
-/* Highlighting urgent/important status */
 
 #battery.critical:not(.charging) {
     color: #cc241d; /* Red when critical */
