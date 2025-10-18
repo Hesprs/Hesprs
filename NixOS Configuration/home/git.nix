@@ -5,5 +5,17 @@
     enable = true;
     userName  = "Hēsperus";
     userEmail = "hesprs@outlook.com";
+    extraConfig = {
+      # FOSS-friendly settings
+      push.default = "simple"; # Match modern push behavior
+      credential.helper = "cache --timeout=7200";
+      init.defaultBranch = "main"; # Set default new branches to 'main'
+      log.decorate = "full"; # Show branch/tag info in git log
+      log.date = "iso"; # ISO 8601 date format
+      # Conflict resolution style for readable diffs
+      merge.conflictStyle = "diff3";
+      http.proxy = "http://127.0.0.1:10808";
+      https.proxy = "http://127.0.0.1:10808";
+    };
   };
 }
