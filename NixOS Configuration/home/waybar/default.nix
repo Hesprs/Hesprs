@@ -12,8 +12,8 @@
         height = 30;
 
         # List of modules to show on the left, center, and right
-        modules-left = [ "sway/workspaces" "sway/mode" ];
-        modules-center = [ "sway/window" ];
+        modules-left = [ "hyprland/workspaces" "hyprland/mode" ];
+        modules-center = [ "hyprland/window" ];
         modules-right = [ "clock" "backlight" "pulseaudio" "network" "battery" "tray" ];
 
         # Module-specific configuration (using WayBar's JSON keys)
