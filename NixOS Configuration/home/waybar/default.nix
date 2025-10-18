@@ -4,9 +4,8 @@
   programs.waybar = {
     enable = true;
     systemd.enable = true;
-
+    style = builtins.readFile ./styles.css;
     settings = {
-      style = builtins.readFile ./styles.css;
       main = {
         layer = "top";
         position = "top";
