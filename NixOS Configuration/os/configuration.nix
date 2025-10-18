@@ -68,7 +68,6 @@
   };
   
   programs.firefox.enable = true;
-  programs.git.enable = true;
   services.tlp.enable = true;
   services.power-profiles-daemon.enable = false;
   services.printing.enable = true;

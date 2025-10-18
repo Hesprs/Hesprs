@@ -19,7 +19,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    kitty                        # terminal
     nautilus                     # file manager
     brightnessctl                # screen brightness control
   ];
