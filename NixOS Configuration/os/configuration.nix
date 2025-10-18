@@ -90,7 +90,7 @@
     python3
     codium
     wtype
-    pkgs-stable.v2rayn
+    v2rayn
   ];
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
