@@ -17,14 +17,11 @@
     flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
   in {
     settings = {
-      # Enable flakes and new 'nix' command
       experimental-features = "nix-command flakes";
-      # Opinionated: disable global registry
       flake-registry = "";
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
     };
-    # Opinionated: disable channels
     channel.enable = false;
     gc = {
       automatic = true;
@@ -91,7 +88,14 @@
     codium
     wtype
     v2rayn
+    nodePackages_latest.nodejs
+    pnpm
   ];
+
+  networking.proxy = {
+    httpProxy = "http://127.0.0.1:10808";
+    httpsProxy = "http://127.0.0.1:10808";
+  };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "25.05";

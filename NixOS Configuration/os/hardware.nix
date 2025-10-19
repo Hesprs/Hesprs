@@ -28,13 +28,16 @@
     [ { device = "/dev/disk/by-uuid/8d11f135-a4d7-4a26-ab17-c9a9f42d5762"; }
     ];
 
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
-
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  # networking
+  networking = {
+    wireless.iwd.enable = true;
+    networkmanager = {
+      enable = true;
+      wifi.backend = "iwd";
+    };
+  };
+  services.resolved.enable = true;
 }

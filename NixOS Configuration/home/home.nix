@@ -6,10 +6,12 @@
     # inputs.nix-colors.homeManagerModule
 
     ./waybar
+    ./gtk.nix
     ./hyprland.nix
     ./git.nix
     ./rofi.nix
     ./kitty.nix
+    ./dconf.nix
   ];
 
   nixpkgs = {
@@ -38,6 +40,17 @@
       size = 18;
     };
   };
+
+  xdg = {
+    enable = true;  # Required for XDG spec compliance
+    userDirs.enable = false;  # Disables XDG user dirs (Documents, etc.)
+    mime.enable = false;      # Disables MIME database
+    extraAutoStart = ''
+      X-GNOME-Autostart-enabled=false
+    '';
+  };
+
+  services.dbus.packages = with pkgs; [];
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

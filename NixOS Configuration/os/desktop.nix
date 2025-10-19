@@ -10,23 +10,16 @@
   # Disable the GNOME Desktop Environment.
   services.displayManager.gdm.enable = false;
   services.desktopManager.gnome.enable = false;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  };
 
   environment.systemPackages = with pkgs; [
     nautilus                     # file manager
     brightnessctl                # screen brightness control
   ];
 
-  xdg.portal = {
+  qt = {
     enable = true;
-    wlr.enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    platformTheme = "gnome";
+    style = "adwaita-dark";
   };
 
   services.gvfs.enable = true;   # nautilus dependency

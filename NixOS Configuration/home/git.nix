@@ -14,8 +14,6 @@
       log.date = "iso"; # ISO 8601 date format
       # Conflict resolution style for readable diffs
       merge.conflictStyle = "diff3";
-      http.proxy = "http://127.0.0.1:10808";
-      https.proxy = "http://127.0.0.1:10808";
     };
   };
 }
