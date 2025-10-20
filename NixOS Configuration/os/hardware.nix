@@ -37,6 +37,7 @@
     networkmanager = {
       enable = true;
       wifi.backend = "iwd";
+      wifi.scanRandMacAddress = false;
     };
   };
   services.resolved.enable = true;

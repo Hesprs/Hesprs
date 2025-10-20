@@ -4,6 +4,8 @@
   imports = [
     ./desktop.nix
     ./hardware.nix
+    ./dconf.nix
+    ./greetd.nix
   ];
 
   nixpkgs = {

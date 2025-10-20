@@ -36,6 +36,10 @@
             home-manager = {
               users.hesprs = { pkgs, ... }: {
                 imports = [./home/home.nix];
+                wayland.windowManager.hyprland = {
+                  package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+                  portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+                };
               };
               backupFileExtension = "bak";
             };

@@ -1,9 +1,6 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports = [
-    ./greetd.nix
-  ];
   # enable the X11 windowing system.
   services.xserver.enable = false;
 
