@@ -1,4 +1,4 @@
-{ inputs, lib, config, pkgs, pkgs-stable,  ... }:
+{ lib, config, pkgs,  ... }:
 
 {
   imports = [
@@ -7,16 +7,7 @@
     ./greetd.nix
   ];
 
-  nixpkgs = {
-    overlays = [
-      (import ./codium)
-    ];
-    config.allowUnfree = true;
-  };
-
-  nix = let
-    flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
-  in {
+  nix = {
     settings = {
       experimental-features = "nix-command flakes";
       flake-registry = "";
@@ -29,10 +20,6 @@
       options = "--delete-older-than 4d";
     };
     optimise.automatic = true;
-
-    # Opinionated: make flake registry and nix path match flake inputs
-    registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
-    nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
   # Bootloader.
@@ -65,12 +52,14 @@
     };
   };
   
+  # services
   programs.firefox.enable = true;
   services.tlp.enable = true;
   services.power-profiles-daemon.enable = false;
   services.printing.enable = true;
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  services.flatpak.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -79,19 +68,44 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
+  programs.dconf.enable = true;
+  xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk];
+    config = {
+      common = {
+        default = [
+          "hyprland"
+          "gtk"
+        ];
+      };
+    };
+  };
   
+  nixpkgs = {
+    overlays = [
+      (import ./codium)
+    ];
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = (pkg: true);
+    };
+  };
+
+  #packages
   environment.systemPackages = with pkgs; [
     thunderbird
-    qq
     obsidian
-    wemeet
     python3
     codium
     wtype
     v2rayn
     nodePackages_latest.nodejs
     pnpm
+    bak2.qq
   ];
+  # | -------------- Flatpak APPs -------------- |
+  # | flatpak install com.tencent.wemeet         |
 
   networking.proxy = {
     httpProxy = "http://127.0.0.1:10808";

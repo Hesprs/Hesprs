@@ -147,7 +147,7 @@
         "$mainMod, Q, exec, $terminal"
         "$mainMod, C, killactive,"
         "$mainMod, M, exit,"
-        "$mainMod, E, exec, $fileManager"
+        "$mainMod, E, exec, $fileManager -w"
         "$mainMod, B, exec, $browser"
         "$mainMod, V, togglefloating,"
         "$mainMod, R, exec, $menu"

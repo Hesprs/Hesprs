@@ -38,7 +38,9 @@
       enable = true;
       wifi.backend = "iwd";
       wifi.scanRandMacAddress = false;
+      wifi.powersave = true;
     };
   };
   services.resolved.enable = true;
+  programs.nm-applet.enable = true;
 }

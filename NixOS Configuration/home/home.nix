@@ -1,10 +1,7 @@
-{ inputs, lib, config, pkgs, ... }:
+{ lib, config, pkgs, ... }:
 
 {
   imports = [
-    # If you want to use home-manager modules from other flakes (such as nix-colors):
-    # inputs.nix-colors.homeManagerModule
-
     ./waybar
     ./gtk.nix
     ./hyprland.nix
@@ -13,17 +10,6 @@
     ./kitty.nix
     ./dconf.nix
   ];
-
-  nixpkgs = {
-    overlays = [
-      # You can add overlays here
-    ];
-    config = {
-      allowUnfree = true;
-      # Workaround for https://github.com/nix-community/home-manager/issues/2942
-      allowUnfreePredicate = _: true;
-    };
-  };
 
   programs.home-manager.enable = true;
   services.dunst.enable = true;

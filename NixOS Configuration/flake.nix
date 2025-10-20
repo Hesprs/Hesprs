@@ -2,50 +2,68 @@
   description = "Your new nix config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
-    hyprland.url = "github:hyprwm/Hyprland";
-
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-bak1.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs-bak2.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs-bak3.url = "github:nixos/nixpkgs/nixos-24.05";
     home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
   outputs = {
     self,
-    nixpkgs,
-    nixpkgs-stable,
+    nixpkgs-unstable,
+    nixpkgs-bak1,
+    nixpkgs-bak2,
+    nixpkgs-bak3,
     home-manager,
     ...
   } @ inputs: let
-    inherit (self) outputs;
     system = "x86_64-linux";
+    pkgs-bak1 = import inputs."nixpkgs-bak1" { inherit system; };
+    pkgs-bak2 = import inputs."nixpkgs-bak2" { inherit system; };
+    pkgs-bak3 = import inputs."nixpkgs-bak3" { inherit system; };
+    pkgs-unstable = import inputs."nixpkgs-unstable" { inherit system; };
   in {
-    nixosConfigurations = {
-      Libertas = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {
-          inherit inputs outputs;
-          pkgs-stable = import nixpkgs-stable {
-            inherit system;
-          };
-        };
-        modules = [
-          ./os/configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              users.hesprs = { pkgs, ... }: {
-                imports = [./home/home.nix];
-                wayland.windowManager.hyprland = {
-                  package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-                  portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-                };
+    nixosConfigurations.Libertas = nixpkgs-unstable.lib.nixosSystem {
+      inherit system;
+      modules = [
+        ./os/configuration.nix
+        home-manager.nixosModules.home-manager
+        {
+          nixpkgs.overlays = [
+            (final: prev: {
+              bak1 = import inputs."nixpkgs-bak1" {
+                inherit system;
+                config = prev.config;
+                overlays = prev.overlays;
               };
-              backupFileExtension = "bak";
-            };
-          }
-        ];
-      };
+            })
+            (final: prev: {
+              bak2 = import inputs."nixpkgs-bak2" {
+                inherit system;
+                config = prev.config;
+                overlays = prev.overlays;
+              };
+            })
+            (final: prev: {
+              bak3 = import inputs."nixpkgs-bak3" {
+                inherit system;
+                config = prev.config;
+                overlays = prev.overlays;
+              };
+            })
+          ];
+        }
+        {
+          home-manager = {
+            users.hesprs = import ./home/home.nix;
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            backupFileExtension = "bak";
+          };
+        }
+      ];
     };
   };
 }
