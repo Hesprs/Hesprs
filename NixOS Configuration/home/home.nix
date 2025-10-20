@@ -11,6 +11,7 @@
     ./git.nix
     ./rofi.nix
     ./kitty.nix
+    ./dconf.nix
   ];
 
   nixpkgs = {
