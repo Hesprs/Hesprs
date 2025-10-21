@@ -6,7 +6,6 @@
     ./swaync
     ./hyprland
     ./gtk.nix
-    ./hyprland.nix
     ./git.nix
     ./rofi.nix
     ./kitty.nix

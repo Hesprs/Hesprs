@@ -7,8 +7,8 @@
 
     # 2. Configure fonts
     font = {
-      name = "JetBrainsMono Nerd Font";
-      size = 14;
+      name = "Fira Code Symbols";
+      size = 12;
     };
 
     # 3. Configure settings
@@ -30,7 +30,7 @@
       enable_audio_bell = false;
       window_padding_width = 10;
       hide_window_decorations = true;
-      background_opacity = 0.4;
+      background_opacity = 0.7;
       dynamic_background_opacity = true;
     };
   };

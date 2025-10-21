@@ -1,4 +1,9 @@
-{ lib, config, pkgs,  ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 
 {
   imports = [
@@ -25,10 +30,10 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  
+
   networking.hostName = "Libertas";
   networking.networkmanager.enable = true;
-  
+
   # Localization
   time.timeZone = "Asia/Shanghai";
   i18n.defaultLocale = "en_US.UTF-8";
@@ -48,10 +53,13 @@
     hesprs = {
       isNormalUser = true;
       description = "Hēsperus";
-      extraGroups = ["wheel" "networkmanager"];
+      extraGroups = [
+        "wheel"
+        "networkmanager"
+      ];
     };
   };
-  
+
   # services
   programs.firefox.enable = true;
   services.tlp.enable = true;
@@ -71,7 +79,10 @@
   programs.dconf.enable = true;
   xdg.portal = {
     enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-gtk
+    ];
     config = {
       common = {
         default = [
@@ -81,7 +92,7 @@
       };
     };
   };
-  
+
   nixpkgs = {
     overlays = [
       (import ./codium)
@@ -103,10 +114,20 @@
     nodePackages_latest.nodejs
     pnpm
     bak2.qq
+
     nixfmt-rfc-style
+    hyprpicker
+    pywal
+    blueman
+    bluez
+    yay
   ];
   # | -------------- Flatpak APPs -------------- |
   # | flatpak install com.tencent.wemeet         |
+
+  fonts.packages = with pkgs; [
+    fira-code-symbols
+  ];
 
   networking.proxy = {
     httpProxy = "http://127.0.0.1:10808";
