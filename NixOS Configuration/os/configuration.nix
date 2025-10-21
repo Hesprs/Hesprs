@@ -103,6 +103,7 @@
     nodePackages_latest.nodejs
     pnpm
     bak2.qq
+    nixfmt-rfc-style
   ];
   # | -------------- Flatpak APPs -------------- |
   # | flatpak install com.tencent.wemeet         |

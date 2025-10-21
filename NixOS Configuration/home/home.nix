@@ -3,6 +3,8 @@
 {
   imports = [
     ./waybar
+    ./swaync
+    ./hyprland
     ./gtk.nix
     ./hyprland.nix
     ./git.nix
