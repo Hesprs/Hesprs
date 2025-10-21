@@ -2,7 +2,7 @@
 
 * {
     font-size:15px;
-    font-family: "Fira Code Symbols";
+    font-family: "Fira Code";
 }
 window#waybar{
     all:unset;

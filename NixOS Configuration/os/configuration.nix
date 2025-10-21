@@ -112,7 +112,7 @@
   # | flatpak install com.tencent.wemeet         |
 
   fonts.packages = with pkgs; [
-    fira-code-symbols
+    (pkgs.callPackage ./fonts/SFMono {})
   ];
 
   networking.proxy = {

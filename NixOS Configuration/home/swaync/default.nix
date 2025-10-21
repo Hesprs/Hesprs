@@ -6,7 +6,7 @@
     style = builtins.readFile ./styles.css;
     settings = {
       # General Position and Layer
-      positionX = "right";
+      positionX = "left";
       positionY = "top";
       layer = "overlay";
       cssPriority = "user";

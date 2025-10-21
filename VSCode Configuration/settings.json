@@ -1,9 +1,9 @@
- {
+{
   "workbench.startupEditor": "none",
   "window.controlsStyle": "custom",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "catppuccin-mocha",
-  "editor.fontFamily": "'SF Mono'",
+  "editor.fontFamily": "SF Mono",
   "workbench.layoutControl.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
@@ -36,5 +36,5 @@
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.navigationControl.enabled": false,
+  "workbench.navigationControl.enabled": false
 }

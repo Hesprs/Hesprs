@@ -7,7 +7,7 @@
 
     # 2. Configure fonts
     font = {
-      name = "Fira Code Symbols";
+      name = "SF Mono";
       size = 12;
     };
 
