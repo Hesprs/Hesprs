@@ -62,20 +62,8 @@
 
   # services
   programs.firefox.enable = true;
-  services.tlp.enable = true;
-  services.power-profiles-daemon.enable = false;
-  services.printing.enable = true;
-  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.flatpak.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-  };
   programs.dconf.enable = true;
   xdg.portal = {
     enable = true;
@@ -116,10 +104,8 @@
     bak2.qq
 
     nixfmt-rfc-style
-    hyprpicker
+    hyprpaper
     pywal
-    blueman
-    bluez
     yay
   ];
   # | -------------- Flatpak APPs -------------- |

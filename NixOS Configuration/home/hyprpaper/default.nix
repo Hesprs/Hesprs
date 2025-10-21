@@ -2,7 +2,7 @@
 
 {
   home.file = {
-    ".config/hyprpaper/wallpapers" = {
+    "Pictures/Wallpapers" = {
       source = ./wallpapers;
       recursive = true;
     };
@@ -10,8 +10,8 @@
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = ./wallpapers/10.png;
-      wallpaper = " , ./wallpapers/10.png";
+      preload = ["/home/hesprs/Pictures/Wallpapers/10.jpg"];
+      wallpaper = [", /home/hesprs/Pictures/Wallpapers/10.jpg"];
     };
   };
 }
