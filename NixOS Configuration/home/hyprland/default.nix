@@ -4,7 +4,7 @@
   imports = [
     ./animations.nix
     ./decoration.nix
-    ./windowRule.nix
+    ./rules.nix
     ./bind.nix
   ];
 
@@ -56,8 +56,8 @@
         gaps_in = 6;
         gaps_out = 12;
         border_size = 1;
-        "col.active_border" = "rgba (f1dfdaff)";
-        "col.inactive_border" = "rgba (ffb59dff)";
+        "col.active_border" = "rgba(f1dfdaff)";
+        "col.inactive_border" = "rgba(ffb59dff)";
         resize_on_border = true;
         layout = "dwindle";
       };

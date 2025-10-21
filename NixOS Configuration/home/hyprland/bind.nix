@@ -76,7 +76,7 @@
     gesture = [
       "3, horizontal, workspace"
       "3, up, dispatcher, exec, $menu"
-      "3, down, dispatcher, exec, wtype - k Escape"
+      "3, down, dispatcher, exec, wtype -k Escape"
     ];
   };
 }
