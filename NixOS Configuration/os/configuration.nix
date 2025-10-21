@@ -113,6 +113,7 @@
 
   fonts.packages = with pkgs; [
     (pkgs.callPackage ./fonts/SFMono {})
+    nerd-fonts.fira-code
   ];
 
   networking.proxy = {

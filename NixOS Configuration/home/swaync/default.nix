@@ -14,10 +14,10 @@
       # Control Center Dimensions and Margins
       control-center-width = 360;
       control-center-height = 560;
-      control-center-margin-top = 13;
-      control-center-margin-bottom = 13;
-      control-center-margin-right = 14;
-      control-center-margin-left = 0;
+      control-center-margin-top = 12;
+      control-center-margin-bottom = 12;
+      control-center-margin-left = 12;
+      control-center-margin-right = 0;
 
       # Notification Window Settings
       notification-window-width = 300;
