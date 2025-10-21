@@ -3,6 +3,7 @@
 {
   programs.waybar = {
     enable = true;
+    systemd.enable = true;
     style = builtins.readFile ./styles.css;
   };
   
@@ -52,7 +53,7 @@
     };
 
     clock = {
-      format = "{:%I:%M:%S %p} ";
+      format = "{:%I:%M %p} ";
       interval = 1;
       "tooltip-format" = "<tt>{calendar}</tt>";
       calendar = {

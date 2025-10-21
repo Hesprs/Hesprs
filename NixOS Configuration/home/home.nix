@@ -5,6 +5,7 @@
     ./waybar
     ./swaync
     ./hyprland
+    ./hyprpaper
     ./gtk.nix
     ./git.nix
     ./rofi.nix
