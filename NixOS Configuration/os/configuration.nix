@@ -113,6 +113,7 @@
 
   fonts.packages = with pkgs; [
     (pkgs.callPackage ./fonts/SFMono {})
+    (pkgs.callPackage ./fonts/SFDisplay { })
     nerd-fonts.fira-code
   ];
 
