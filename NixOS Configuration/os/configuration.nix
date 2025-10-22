@@ -9,6 +9,7 @@
   imports = [
     ./desktop.nix
     ./hardware.nix
+    ./devices.nix
     ./greetd.nix
   ];
 
@@ -61,7 +62,6 @@
   };
 
   # services
-  programs.firefox.enable = true;
   security.rtkit.enable = true;
   services.flatpak.enable = true;
   programs.dconf.enable = true;
@@ -95,13 +95,24 @@
   environment.systemPackages = with pkgs; [
     thunderbird
     obsidian
-    python3
     codium
     wtype
     v2rayn
+    bak2.qq
+    mission-center
+
+    zathura
+    imv
+
+    zip
+
+    grim
+    slurp
+    wl-clipboard
+
+    python3
     nodePackages_latest.nodejs
     pnpm
-    bak2.qq
 
     nixfmt-rfc-style
     hyprpaper
@@ -113,7 +124,7 @@
 
   fonts.packages = with pkgs; [
     (pkgs.callPackage ./fonts/SFMono {})
-    (pkgs.callPackage ./fonts/SFDisplay { })
+    (pkgs.callPackage ./fonts/SFDisplay {})
     nerd-fonts.fira-code
   ];
 

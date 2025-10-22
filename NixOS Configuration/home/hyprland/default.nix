@@ -41,10 +41,8 @@
       # ### ENVIRONMENT VARIABLES ###
       # #############################
       env = [
-        #"XCURSOR_SIZE,24"
+        "XCURSOR_SIZE,16"
         "HYPRCURSOR_SIZE,16"
-        # Note: If you configure cursors with home.pointerCursor,
-        # you might not need the XCURSOR_SIZE env var.
       ];
 
       # #####################

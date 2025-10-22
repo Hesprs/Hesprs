@@ -15,6 +15,7 @@
 
   programs.home-manager.enable = true;
   services.dunst.enable = true;
+  programs.zen-browser.enable = true;
 
   home = {
     username = "hesprs";
