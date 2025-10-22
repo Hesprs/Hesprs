@@ -2,10 +2,13 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }:
 
-{
+let
+  system = "x86_64-linux";
+in {
   imports = [
     ./desktop.nix
     ./hardware.nix
@@ -100,6 +103,7 @@
     v2rayn
     bak2.qq
     mission-center
+    inputs.zen-browser.packages."${system}".default
 
     zathura
     imv

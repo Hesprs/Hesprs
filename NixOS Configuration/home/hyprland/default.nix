@@ -14,42 +14,25 @@
     xwayland.enable = true;
 
     settings = {
-      # Custom variables (no direct equivalent, defined as Nix variables)
-      # You can use these Nix variables in other parts of your home-manager config
-      # For use within the settings block, you should embed them in string interpolations.
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";
-      "$browser" = "firefox";
+      "$browser" = "zen";
       "$menu" = "rofi -show drun";
       "$mainMod" = "SUPER";
 
-      # ##################
-      # ### MONITORS ###
-      # ##################
       monitor = [
         ",preferred,auto,1.0"
       ];
 
-      # ###############
-      # ### AUTOSTART ###
-      # ###############
       exec-once = [
         "v2rayN"
       ];
 
-      # #############################
-      # ### ENVIRONMENT VARIABLES ###
-      # #############################
       env = [
-        "XCURSOR_SIZE,16"
-        "HYPRCURSOR_SIZE,16"
+        "XCURSOR_SIZE,24"
+        "HYPRCURSOR_SIZE,24"
       ];
 
-      # #####################
-      # ### LOOK AND FEEL ###
-      # #####################
-
-      # general
       general = {
         gaps_in = 6;
         gaps_out = 12;
@@ -75,16 +58,12 @@
         pass_mouse_when_bound = false;
       };
 
-      # misc
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
         initial_workspace_tracking = 1;
       };
 
-      # #############
-      # ### INPUT ###
-      # #############
       input = {
         kb_layout = "us";
         kb_variant = "";

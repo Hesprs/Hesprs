@@ -15,7 +15,6 @@
 
   programs.home-manager.enable = true;
   services.dunst.enable = true;
-  programs.zen-browser.enable = true;
 
   home = {
     username = "hesprs";
@@ -25,7 +24,7 @@
       gtk.enable = true;
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic"; 
-      size = 16;
+      size = 24;
     };
   };
 
