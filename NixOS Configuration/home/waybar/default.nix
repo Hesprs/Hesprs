@@ -6,7 +6,7 @@
     systemd.enable = true;
     style = builtins.readFile ./styles.css;
   };
-  
+
   programs.waybar.settings.main = {
     layer = "top";
     position = "top";
@@ -119,9 +119,12 @@
       tooltip = false;
     };
 
-    "custom/endpoint" = {
-      format = "|";
-      tooltip = false;
+    "custom/proxy" = {
+      exec = "~/.local/scripts/proxy/status.sh";
+      on-click = "~/.local/scripts/proxy/toggle.sh";
+      interval = 5;
+      signal = 10;
+      format = "{}";
     };
 
     "group/expand" = {
@@ -136,7 +139,7 @@
         "cpu"
         "memory"
         "temperature"
-        "custom/endpoint"
+        "custom/proxy"
       ];
     };
 
