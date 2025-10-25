@@ -119,14 +119,6 @@
       tooltip = false;
     };
 
-    "custom/proxy" = {
-      exec = "~/.local/scripts/proxy/status.sh";
-      on-click = "~/.local/scripts/proxy/toggle.sh";
-      interval = 5;
-      signal = 10;
-      format = "{}";
-    };
-
     "group/expand" = {
       orientation = "horizontal";
       drawer = {
@@ -139,7 +131,6 @@
         "cpu"
         "memory"
         "temperature"
-        "custom/proxy"
       ];
     };
 

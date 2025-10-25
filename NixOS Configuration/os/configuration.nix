@@ -8,7 +8,8 @@
 
 let
   system = "x86_64-linux";
-in {
+in
+{
   imports = [
     ./desktop.nix
     ./hardware.nix
@@ -104,6 +105,7 @@ in {
     bak2.qq
     mission-center
     inputs.zen-browser.packages."${system}".default
+    telegram-desktop
 
     zathura
     imv
@@ -125,10 +127,9 @@ in {
   ];
   # | -------------- Flatpak APPs -------------- |
   # | flatpak install com.tencent.wemeet         |
-
   fonts.packages = with pkgs; [
-    (pkgs.callPackage ./fonts/SFMono {})
-    (pkgs.callPackage ./fonts/SFDisplay {})
+    (pkgs.callPackage ./fonts/SFMono { })
+    (pkgs.callPackage ./fonts/SFDisplay { })
     nerd-fonts.fira-code
   ];
 

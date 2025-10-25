@@ -9,7 +9,7 @@
   ];
 
   wayland.windowManager.hyprland = {
-    enable = true; # Enable the Hyprland Home Manager module
+    enable = true;
     systemd.variables = [ "--all" ];
     xwayland.enable = true;
 

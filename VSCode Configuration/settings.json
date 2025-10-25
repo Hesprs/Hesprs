@@ -30,11 +30,12 @@
     "lovership",
     "subfolders"
   ],
-  "workbench.editor.editorActionsLocation": "hidden",
   "terminal.integrated.stickyScroll.enabled": false,
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.navigationControl.enabled": false
+  "workbench.navigationControl.enabled": false,
+  "continue.enableTabAutocomplete": true,
+  "chat.disableAIFeatures": true
 }
