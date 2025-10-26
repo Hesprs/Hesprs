@@ -24,7 +24,7 @@ mainbox {
     orientation:                 horizontal;
     children:                    [ "imagebox" , "listbox" ];
     background-color:            transparent;
-    background-image:            "~/Pictures/Wallpapers/10.png";
+    background-image:            url("~/Pictures/Wallpapers/10.jpg");
 }
 
 imagebox {

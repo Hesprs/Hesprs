@@ -3,10 +3,15 @@
 {
   programs.rofi = {
     enable = true;
-    theme = builtins.readfile ./styles.rasi;
-    settings = {
+    theme = "~/.config/rofi/styles.rasi";
+    extraConfig = {
       # The 'modi' option is a list of strings in Nix
-      modi = [ "drun" "filebrowser" "window" "run" ];
+      modi = [
+        "drun"
+        "filebrowser"
+        "window"
+        "run"
+      ];
       font = "Fira Sans 11";
       show-icons = true;
 
@@ -31,4 +36,5 @@
       window-format = "{w} · {c} · {t}";
     };
   };
+  home.file.".config/rofi/styles.rasi".source = ./styles.rasi;
 }
