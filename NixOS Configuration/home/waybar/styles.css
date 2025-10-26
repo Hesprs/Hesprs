@@ -1,4 +1,4 @@
-@define-color background #1a110f;
+@import 'colours.css';
 
 window#waybar {
   all: unset;

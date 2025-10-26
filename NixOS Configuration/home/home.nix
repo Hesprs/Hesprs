@@ -6,6 +6,7 @@
     ./swaync
     ./hyprland
     ./hyprpaper
+    ./colours
     ./gtk.nix
     ./git.nix
     ./rofi.nix
