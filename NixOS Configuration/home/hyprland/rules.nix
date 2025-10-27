@@ -38,6 +38,11 @@
       "blur, waybar"
       "ignorezero, waybar"
       "ignorealpha 0.5, waybar"
+
+      # Rofi
+      "blur, rofi"
+      "ignorezero, rofi"
+      "ignorealpha 0.5, rofi"
     ];
   };
 }

@@ -9,7 +9,7 @@
     ./colours
     ./gtk.nix
     ./git.nix
-    ./rofi
+    ./walker
     ./kitty.nix
     ./dconf.nix
   ];

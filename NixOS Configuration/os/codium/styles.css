@@ -1,194 +1,314 @@
 .monaco-workbench {
-    --borderColor: transparent;
-    --borderRadius1: 6px;
-    --borderRadius2: 12px;
-    --padding1: 4px;
-    --padding2: calc(2 * var(--padding1));
-    --selectedColor: rgba(121, 121, 121, 0.4);
-    --contralPanelColor: rgb(31, 31, 31);
-    background-color: transparent !important;
+  --borderColor: transparent;
+  --borderRadius1: 6px;
+  --borderRadius2: 12px;
+  --padding1: 4px;
+  --padding2: calc(2 * var(--padding1));
+  --selectedColor: rgba(121, 121, 121, 0.4);
+  --centralPanelColor: rgb(31, 31, 31);
+  background-color: transparent !important;
 }
 
 /*===== disable all the borders =====*/
 /* activity bar (ribbon) */
 #workbench\.parts\.activitybar {
-    border-color: var(--borderColor) !important;
+  border-color: var(--borderColor) !important;
 }
 /* title bar */
 #workbench\.parts\.titlebar {
-    border-color: var(--borderColor) !important;
+  border-color: var(--borderColor) !important;
 }
 /* status bar */
 #workbench\.parts\.statusbar {
-    --status-border-top-color: var(--borderColor) !important;
+  --status-border-top-color: var(--borderColor) !important;
 }
 /* "OUTLINE", "TIMELINE" in explorer */
 .monaco-workbench {
-    --vscode-sideBarSectionHeader-border: var(--borderColor) !important;
+  --vscode-sideBarSectionHeader-border: var(--borderColor) !important;
 }
 /* right panel */
 #workbench\.parts\.auxiliarybar {
-    border-color: var(--borderColor) !important;
+  border-color: var(--borderColor) !important;
 }
 /* left panel */
 #workbench\.parts\.sidebar {
-    border-color: var(--borderColor) !important;
+  border-color: var(--borderColor) !important;
 }
 /* tab split line */
 .tab {
-    border-color: var(--borderColor) !important;
+  border-color: var(--borderColor) !important;
 }
 /* editor scroll bar (and its background) */
 .decorationsOverviewRuler {
-    display: none !important;
-} #workbench\.parts\.editor .monaco-scrollable-element .editor-container .scrollbar.vertical {
-    background-color: var(--contralPanelColor) !important;
-    opacity: 1 !important;
-} #workbench\.parts\.editor .monaco-scrollable-element .editor-container .scrollbar.vertical > .slider {
-    transition: opacity .8s linear !important;
-} #workbench\.parts\.editor .monaco-scrollable-element .editor-container .scrollbar.vertical.fade > .slider {
-    opacity: 0 !important;
+  display: none !important;
+}
+#workbench\.parts\.editor
+  .monaco-scrollable-element
+  .editor-container
+  .scrollbar.vertical {
+  background-color: var(--centralPanelColor) !important;
+  opacity: 1 !important;
+}
+#workbench\.parts\.editor
+  .monaco-scrollable-element
+  .editor-container
+  .scrollbar.vertical
+  > .slider {
+  transition: opacity 0.8s linear !important;
+}
+#workbench\.parts\.editor
+  .monaco-scrollable-element
+  .editor-container
+  .scrollbar.vertical.fade
+  > .slider {
+  opacity: 0 !important;
 }
 /* integrated terminal scroll bar */
 .xterm-decoration-overview-ruler {
-    display: none !important;
+  display: none !important;
 }
 /* between tab bar and editor */
 .tabs-and-actions-container.tabs-border-bottom {
-    --tabs-border-bottom-color: var(--borderColor) !important;
+  --tabs-border-bottom-color: var(--borderColor) !important;
 }
 /* between console panel and editor */
 #workbench\.parts\.panel > div.composite.title.has-composite-bar {
-    border-color: var(--borderColor) !important;
-} #workbench\.parts\.panel {
-    border-color: var(--borderColor) !important;
+  border-color: var(--borderColor) !important;
+}
+#workbench\.parts\.panel {
+  border-color: var(--borderColor) !important;
 }
 
 /*===== disable all the shadows =====*/
 /* minimap */
 .minimap-shadow-visible {
-    display: none !important;
+  display: none !important;
 }
 /* between editor and tab bar */
 .scroll-decoration {
-    display: none !important;
+  display: none !important;
 }
 
 /*===== indicative elements =====*/
 /* sliders */
 .slider {
-    border-radius: var(--borderRadius1) !important;
+  border-radius: var(--borderRadius1) !important;
 }
 /* minimap slider */
 .minimap-slider-horizontal {
-    border-radius: var(--borderRadius1) !important;
+  border-radius: var(--borderRadius1) !important;
 }
 /* adjust editor vertical slider width */
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable > .scrollbar.vertical > div {
-    width: 8px !important;
-    margin: 0 3px;
-} #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable > .scrollbar.horizontal > div {
-    height: 8px !important;
-    margin: 1px 0 3px 0;
+#workbench\.parts\.editor
+  > div.content
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div
+  > div
+  > div.editor-container
+  > div
+  > div
+  > div.overflow-guard
+  > div.monaco-scrollable-element.editor-scrollable
+  > .scrollbar.vertical
+  > div {
+  width: 8px !important;
+  margin: 0 3px;
+}
+#workbench\.parts\.editor
+  > div.content
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div
+  > div
+  > div.editor-container
+  > div
+  > div
+  > div.overflow-guard
+  > div.monaco-scrollable-element.editor-scrollable
+  > .scrollbar.horizontal
+  > div {
+  height: 8px !important;
+  margin: 1px 0 3px 0;
 }
 /* explorer selected file */
 .monaco-list-row.selected {
-    border-radius: var(--borderRadius1) !important;
+  border-radius: var(--borderRadius1) !important;
 }
 /* activity bar (ribbon) selected option */
 .part.activitybar .checked > .active-item-indicator {
-    z-index: 0 !important;
-} .part.activitybar .checked > .active-item-indicator::before {
-    position: absolute !important;
-    top: var(--padding1) !important;
-    right: var(--padding1) !important;
-    bottom: var(--padding1) !important;
-    left: var(--padding1) !important;
-    border-radius: var(--borderRadius1) !important;
-    background: rgb(55, 55, 61) !important;
-    pointer-events: none !important;
-    border: none !important;
-    width: unset !important;
-    height: unset !important;
+  z-index: 0 !important;
+}
+.part.activitybar .checked > .active-item-indicator::before {
+  position: absolute !important;
+  top: var(--padding1) !important;
+  right: var(--padding1) !important;
+  bottom: var(--padding1) !important;
+  left: var(--padding1) !important;
+  border-radius: var(--borderRadius1) !important;
+  background: rgb(55, 55, 61) !important;
+  pointer-events: none !important;
+  border: none !important;
+  width: unset !important;
+  height: unset !important;
 }
 /* panel (terminal) selected option */
 .part.panel .action-label {
-    z-index: 1 !important;
-} .part.panel .checked > .active-item-indicator {
-    z-index: 0 !important;
-    overflow: visible !important;
-} .part.panel .checked > .active-item-indicator::before {
-    position: absolute !important;
-    top: calc(3 * var(--padding1)) !important;
-    right: calc(0px - var(--padding1)) !important;
-    bottom: var(--padding1) !important;
-    left: calc(0px - var(--padding1)) !important;
-    border-radius: var(--borderRadius1) !important;
-    background: rgb(55, 55, 61) !important;
-    pointer-events: none !important;
-    border: none !important;
-    width: unset !important;
-    height: unset !important;
+  z-index: 1 !important;
+}
+.part.panel .checked > .active-item-indicator {
+  z-index: 0 !important;
+  overflow: visible !important;
+}
+.part.panel .checked > .active-item-indicator::before {
+  position: absolute !important;
+  top: calc(3 * var(--padding1)) !important;
+  right: calc(0px - var(--padding1)) !important;
+  bottom: var(--padding1) !important;
+  left: calc(0px - var(--padding1)) !important;
+  border-radius: var(--borderRadius1) !important;
+  background: rgb(55, 55, 61) !important;
+  pointer-events: none !important;
+  border: none !important;
+  width: unset !important;
+  height: unset !important;
 }
 /* remove inticator selected terminal */
 .terminal-tabs-entry::before {
-    display: none !important;    
+  display: none !important;
 }
 
 /*===== central panel =====*/
 .title.tabs {
-    padding: 0 !important;
-    background-color: var(--contralPanelColor) !important;
-    .tab {
-        background-color: var(--contralPanelColor) !important;
-    }
+  padding: 0 !important;
+  background-color: var(--centralPanelColor) !important;
+  .tab {
+    background-color: var(--centralPanelColor) !important;
+  }
 }
 html {
-    background-color: rgb(24, 24, 24) !important;
+  background-color: rgb(24, 24, 24) !important;
 }
 /* enable shadow and border radius */
 #workbench\.parts\.editor > .content {
-    background-color: transparent !important;
-} #workbench\.parts\.editor > .content > .grid-view-container {
-    border-radius: var(--borderRadius2) !important;
-    box-shadow: 0 0 16px rgb(0, 0, 0, 0.2) !important;
-    background-color: var(--contralPanelColor) !important;
-    overflow: hidden !important;
-} .monaco-workbench > div.monaco-grid-view > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element,
-.monaco-workbench > div.monaco-grid-view > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container,
-.monaco-workbench > div.monaco-grid-view > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element,
+  background-color: transparent !important;
+}
+#workbench\.parts\.editor > .content > .grid-view-container {
+  border-radius: var(--borderRadius2) !important;
+  box-shadow: 0 0 16px rgb(0, 0, 0, 0.2) !important;
+  background-color: var(--centralPanelColor) !important;
+  overflow: hidden !important;
+}
+.monaco-workbench
+  > div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element,
+.monaco-workbench
+  > div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container,
+.monaco-workbench
+  > div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element,
 #workbench\.parts\.editor,
 #workbench\.parts\.editor > .content,
-.monaco-workbench > div.monaco-grid-view > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container {
-    overflow: visible !important;
-} .monaco-workbench > div.monaco-grid-view > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(1) {
-    z-index: 1 !important;
+.monaco-workbench
+  > div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container {
+  overflow: visible !important;
+}
+.monaco-workbench
+  > div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div:nth-child(1) {
+  z-index: 1 !important;
 }
 /* fix muitimedia preview failure */
 .monaco-workbench > [data-parent-flow-to-element-id] {
-    z-index: 1 !important;
-    border-radius: var(--borderRadius2) !important;
-    overflow: hidden !important;
+  z-index: 1 !important;
+  border-radius: var(--borderRadius2) !important;
+  overflow: hidden !important;
 }
 /* gap between central panel and left panel */
 #workbench\.parts\.sidebar > div.content {
-    box-sizing: border-box !important;
-    padding-right: var(--padding1) !important;
+  box-sizing: border-box !important;
+  padding-right: var(--padding1) !important;
 }
 
 /* round tabs */
 .tab-border-top-container {
-    display: none !important;
-} .tabs .tab {
-    padding-left: var(--padding2) !important;
-} .tabs .tab.active::before {
-    content: '';
-    position: absolute;
-    top: var(--padding1);
-    right: 0;
-    bottom: var(--padding1);
-    left: var(--padding1);
-    border-radius: var(--borderRadius1);
-    background-color: var(--selectedColor);
-    pointer-events: none;
+  display: none !important;
+}
+.tabs .tab {
+  padding-left: var(--padding2) !important;
+}
+.tabs .tab.active::before {
+  content: "";
+  position: absolute;
+  top: var(--padding1);
+  right: 0;
+  bottom: var(--padding1);
+  left: var(--padding1);
+  border-radius: var(--borderRadius1);
+  background-color: var(--selectedColor);
+  pointer-events: none;
 }
