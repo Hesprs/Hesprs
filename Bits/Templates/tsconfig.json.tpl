@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"outDir": "./dist",
+		"declarationDir": "./dist/types",
+		"strict": true,
+		"esModuleInterop": true,
+		"emitDeclarationOnly": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"sourceMap": true,
+		"noEmit": false,
+		"lib": ["ES2022", "DOM"]
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "eslint.config.ts.tpl", "dist"]
+}

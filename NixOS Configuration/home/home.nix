@@ -7,9 +7,9 @@
     ./hyprland
     ./hyprpaper
     ./colours
+    ./rofi
     ./gtk.nix
     ./git.nix
-    ./walker
     ./kitty.nix
     ./dconf.nix
   ];

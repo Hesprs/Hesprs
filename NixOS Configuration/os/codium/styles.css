@@ -1,5 +1,5 @@
 .monaco-workbench {
-  --borderColor: transparent;
+  --backgroundColor: transparent;
   --borderRadius1: 6px;
   --borderRadius2: 12px;
   --padding1: 4px;
@@ -12,56 +12,61 @@
 /*===== disable all the borders =====*/
 /* activity bar (ribbon) */
 #workbench\.parts\.activitybar {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 /* title bar */
 #workbench\.parts\.titlebar {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 /* status bar */
 #workbench\.parts\.statusbar {
-  --status-border-top-color: var(--borderColor) !important;
+  --status-border-top-color: var(--backgroundColor) !important;
 }
 /* "OUTLINE", "TIMELINE" in explorer */
 .monaco-workbench {
-  --vscode-sideBarSectionHeader-border: var(--borderColor) !important;
+  --vscode-sideBarSectionHeader-border: var(--backgroundColor) !important;
 }
 /* right panel */
 #workbench\.parts\.auxiliarybar {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 /* left panel */
 #workbench\.parts\.sidebar {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 /* tab split line */
 .tab {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 /* editor scroll bar (and its background) */
 .decorationsOverviewRuler {
   display: none !important;
 }
 #workbench\.parts\.editor
-  .monaco-scrollable-element
-  .editor-container
-  .scrollbar.vertical {
-  background-color: var(--centralPanelColor) !important;
-  opacity: 1 !important;
-}
-#workbench\.parts\.editor
-  .monaco-scrollable-element
-  .editor-container
-  .scrollbar.vertical
-  > .slider {
-  transition: opacity 0.8s linear !important;
-}
-#workbench\.parts\.editor
-  .monaco-scrollable-element
-  .editor-container
-  .scrollbar.vertical.fade
-  > .slider {
-  opacity: 0 !important;
+  > div.content
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element
+  > div.split-view-container
+  > div
+  > div
+  > div.editor-container
+  > div
+  > div
+  > div.overflow-guard
+  > div.monaco-scrollable-element.editor-scrollable {
+  > .scrollbar.vertical {
+    background-color: var(--centralPanelColor) !important;
+    opacity: 1 !important;
+    > .slider {
+      transition: opacity 0.8s linear !important;
+    }
+  }
+  > .scrollbar.vertical.fade > .slider {
+    opacity: 0 !important;
+  }
 }
 /* integrated terminal scroll bar */
 .xterm-decoration-overview-ruler {
@@ -69,14 +74,14 @@
 }
 /* between tab bar and editor */
 .tabs-and-actions-container.tabs-border-bottom {
-  --tabs-border-bottom-color: var(--borderColor) !important;
+  --tabs-border-bottom-color: var(--backgroundColor) !important;
 }
 /* between console panel and editor */
 #workbench\.parts\.panel > div.composite.title.has-composite-bar {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 #workbench\.parts\.panel {
-  border-color: var(--borderColor) !important;
+  border-color: var(--backgroundColor) !important;
 }
 
 /*===== disable all the shadows =====*/
@@ -87,6 +92,11 @@
 /* between editor and tab bar */
 .scroll-decoration {
   display: none !important;
+}
+
+/*===== fix status bar color =====*/
+#workbench\.parts\.statusbar {
+  background-color: var(--backgroundColor) !important;
 }
 
 /*===== indicative elements =====*/
@@ -113,31 +123,15 @@
   > div
   > div
   > div.overflow-guard
-  > div.monaco-scrollable-element.editor-scrollable
-  > .scrollbar.vertical
-  > div {
-  width: 8px !important;
-  margin: 0 3px;
-}
-#workbench\.parts\.editor
-  > div.content
-  > div
-  > div
-  > div
-  > div
-  > div.monaco-scrollable-element
-  > div.split-view-container
-  > div
-  > div
-  > div.editor-container
-  > div
-  > div
-  > div.overflow-guard
-  > div.monaco-scrollable-element.editor-scrollable
-  > .scrollbar.horizontal
-  > div {
-  height: 8px !important;
-  margin: 1px 0 3px 0;
+  > div.monaco-scrollable-element.editor-scrollable {
+  > .scrollbar.vertical > div {
+    width: 8px !important;
+    margin: 0 3px;
+  }
+  > .scrollbar.horizontal > div {
+    height: 8px !important;
+    margin: 1px 0 3px 0;
+  }
 }
 /* explorer selected file */
 .monaco-list-row.selected {
@@ -293,7 +287,6 @@ html {
   box-sizing: border-box !important;
   padding-right: var(--padding1) !important;
 }
-
 /* round tabs */
 .tab-border-top-container {
   display: none !important;

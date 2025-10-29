@@ -18,8 +18,7 @@
         vibrancy = 0.3;
         ignore_opacity = true;
         xray = true;
-        noise = 0.08;
-        popups = true;
+        noise = 0.06;
       };
 
       shadow = {

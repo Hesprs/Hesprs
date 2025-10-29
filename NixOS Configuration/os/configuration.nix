@@ -120,10 +120,7 @@ in
     nodePackages_latest.nodejs
     pnpm
 
-    nixfmt-rfc-style
     hyprpaper
-    pywal
-    yay
   ];
   # | -------------- Flatpak APPs -------------- |
   # | flatpak install com.tencent.wemeet         |

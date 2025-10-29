@@ -2,7 +2,7 @@
 
 {
   wayland.windowManager.hyprland.settings = {
-    windowrule = [
+    windowrulev2 = [
       # Standard App Rules
       "tile, title:^(Microsoft-edge)$"
       "tile, title:^(Brave-browser)$"
@@ -20,9 +20,10 @@
       # idleinhibit Rule
       "idleinhibit fullscreen,class:([window])"
 
-      # XWayland Rules
-      # Rule to prevent large border when moving objects in Resolve
-      "noblur, class:^(\\bresolve\\b)$, xwayland:1"
+      # file chooser fix
+      "noblur, class:^(Xdg-desktop-portal-gtk)$"
+      "noborder, class:^(Xdg-desktop-portal-gtk)$"
+      "noshadow, class:^(Xdg-desktop-portal-gtk)$"
     ];
 
     layerrule = [
