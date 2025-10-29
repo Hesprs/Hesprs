@@ -25,5 +25,4 @@
       window-format = "{w} · {c} · {t}";
     };
   };
-  home.file.".config/rofi/styles.rasi".source = ./styles.rasi;
 }

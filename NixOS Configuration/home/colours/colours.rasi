@@ -1,6 +1,7 @@
 * {
-    background: rgba(255, 255, 255, 0.7);
-    primary: #006973;
+    background: rgba(0, 0, 0, 0.7);
+    listbox: rgba(0, 0, 0, 0.25);
+    primary: rgba(66, 66, 70, 0.25);
     primary-fixed: #9eeffc;
     primary-fixed-dim: #81d3e0;
     on-primary: #ffffff;
@@ -28,8 +29,8 @@
     on-error: #ffffff;
     error-container: #ffdad6;
     on-error-container: #410002;
-    surface: #f5fafb;
-    on-surface: #171d1e;
+    surface: rgba(36, 36, 36, 0.5);
+    on-surface: #ffffff;
     on-surface-variant: #3f484a;
     outline: #6f797a;
     outline-variant: #bfc8ca;

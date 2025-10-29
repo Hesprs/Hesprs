@@ -17,7 +17,7 @@
       "$terminal" = "kitty";
       "$fileManager" = "nautilus";
       "$browser" = "zen";
-      "$menu" = "walker";
+      "$menu" = "rofi -show drun";
       "$mainMod" = "SUPER";
 
       monitor = [

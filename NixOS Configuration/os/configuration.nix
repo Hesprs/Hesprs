@@ -1,14 +1,9 @@
 {
-  lib,
   config,
   pkgs,
-  inputs,
   ...
 }:
 
-let
-  system = "x86_64-linux";
-in
 {
   imports = [
     ./desktop.nix
@@ -104,7 +99,7 @@ in
     v2rayn
     bak2.qq
     mission-center
-    inputs.zen-browser.packages."${system}".default
+    zen
     telegram-desktop
 
     zathura
@@ -119,6 +114,7 @@ in
     python3
     nodePackages_latest.nodejs
     pnpm
+    nixfmt
 
     hyprpaper
   ];

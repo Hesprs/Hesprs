@@ -29,9 +29,5 @@
         color_inactive = "rgba(0, 0, 0, 0.12)";
       };
     };
-
-    # Top-level Layer Rule
-    # Multiple rules are specified as a list of strings
-    layerrule = [ "blur, waybar" ];
   };
 }

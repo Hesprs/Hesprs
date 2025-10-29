@@ -58,9 +58,10 @@
                   overlays = prev.overlays;
                 };
               })
+              (final: prev: {
+                zen = inputs.zen-browser.packages.${system}.default;
+              })
             ];
-          }
-          {
             home-manager = {
               users.hesprs = import ./home/home.nix;
               useGlobalPkgs = true;
