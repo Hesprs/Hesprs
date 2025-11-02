@@ -1,7 +1,6 @@
 node_modules
 
 # dot files
-.gitignore
 .vscode
 .cursor
 .continue

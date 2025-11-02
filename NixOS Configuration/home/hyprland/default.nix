@@ -8,8 +8,6 @@
     ./bind.nix
   ];
 
-  home.file.".config/hyprland/startup.sh".source = ./startup.sh;
-
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.variables = [ "--all" ];
@@ -26,7 +24,11 @@
         ",preferred,auto,1.0"
       ];
 
-      exec-once = ./startup.sh;
+      exec-once = [
+        "v2rayN"
+        "awww-daemon"
+        "awww img ~/Pictures/Wallpapers/1.gif"
+      ];
 
       env = [
         "XCURSOR_SIZE,24"
@@ -35,10 +37,10 @@
 
       general = {
         gaps_in = 6;
-        gaps_out = 12;
+        gaps_out = "0, 12, 12, 12";
         border_size = 1;
-        "col.active_border" = "rgba(66667066)";
-        "col.inactive_border" = "rgba(66667066)";
+        "col.active_border" = "rgba(ffffff33)";
+        "col.inactive_border" = "rgba(ffffff33)";
         resize_on_border = false;
         layout = "dwindle";
       };

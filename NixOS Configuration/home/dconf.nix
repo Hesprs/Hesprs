@@ -20,7 +20,7 @@
         socks-host = "";
         socks-port = 0;
       };
-      "/org/gnome/desktop/wm/preferences" = {
+      "org/gnome/desktop/wm/preferences" = {
         button-layout = "menu:";
       };
     };

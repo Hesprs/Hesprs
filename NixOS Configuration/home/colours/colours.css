@@ -1,6 +1,7 @@
 @define-color blur_background rgba(26, 17, 15, 0.3);
 @define-color blur_background8 rgba(26, 17, 15, 0.8);
-@define-color background #1a110f;
+@define-color background rgba(0, 0, 0, 0.7);
+@define-color border rgba(255, 255, 255, 0.2);
 @define-color error #ffb4ab;
 @define-color error_container #93000a;
 @define-color inverse_on_surface #392e2b;

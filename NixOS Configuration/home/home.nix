@@ -16,9 +16,9 @@
   programs.home-manager.enable = true;
   services.dunst.enable = true;
 
-  home.file."Picture/Wallpapers" = {
+  home.file."Pictures/Wallpapers" = {
     recursive = true;
-    source = ./wallpaper;
+    source = ./wallpapers;
   };
 
   home = {
