@@ -60,7 +60,7 @@ button {
 button selected {
     padding:                     15px;
     border-radius:               2em;    
-    background-color:            @surface;
+    background-color:            @primary;
     text-color:                  @on-surface;
 }
 

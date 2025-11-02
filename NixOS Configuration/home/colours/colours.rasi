@@ -1,7 +1,7 @@
 * {
     background: rgba(0, 0, 0, 0.7);
     listbox: rgba(0, 0, 0, 0.25);
-    primary: rgba(66, 66, 70, 0.25);
+    primary: rgba(0, 0, 0, 0.5);
     primary-fixed: #9eeffc;
     primary-fixed-dim: #81d3e0;
     on-primary: #ffffff;

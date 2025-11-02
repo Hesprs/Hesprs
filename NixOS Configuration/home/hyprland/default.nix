@@ -8,6 +8,8 @@
     ./bind.nix
   ];
 
+  home.file.".config/hyprland/startup.sh".source = ./startup.sh;
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.variables = [ "--all" ];
@@ -24,9 +26,7 @@
         ",preferred,auto,1.0"
       ];
 
-      exec-once = [
-        "v2rayN"
-      ];
+      exec-once = ./startup.sh;
 
       env = [
         "XCURSOR_SIZE,24"

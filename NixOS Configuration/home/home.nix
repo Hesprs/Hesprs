@@ -5,7 +5,6 @@
     ./waybar
     ./swaync
     ./hyprland
-    ./hyprpaper
     ./colours
     ./rofi
     ./gtk.nix
@@ -16,6 +15,11 @@
 
   programs.home-manager.enable = true;
   services.dunst.enable = true;
+
+  home.file."Picture/Wallpapers" = {
+    recursive = true;
+    source = ./wallpaper;
+  };
 
   home = {
     username = "hesprs";

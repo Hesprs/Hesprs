@@ -98,12 +98,17 @@
     wtype
     v2rayn
     bak2.qq
+    wechat
     mission-center
     zen
     telegram-desktop
+    zoom-us
 
-    zathura
-    imv
+    loupe # image viewer
+    showtime # video viewer
+    decibels # audio player
+    papers # PDF viewer
+    gnome-calculator
 
     zip
 
@@ -116,7 +121,7 @@
     pnpm
     nixfmt
 
-    hyprpaper
+    awww
   ];
   # | -------------- Flatpak APPs -------------- |
   # | flatpak install com.tencent.wemeet         |

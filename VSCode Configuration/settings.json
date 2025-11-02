@@ -38,5 +38,7 @@
   "workbench.navigationControl.enabled": false,
   "continue.enableTabAutocomplete": true,
   "chat.disableAIFeatures": true,
-  "workbench.settings.showAISearchToggle": false
+  "workbench.settings.showAISearchToggle": false,
+  "continue.showInlineTip": false,
+  "continue.enableNextEdit": false
 }

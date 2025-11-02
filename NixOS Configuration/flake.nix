@@ -9,6 +9,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
   outputs =
@@ -20,6 +21,7 @@
       nixpkgs-bak3,
       home-manager,
       zen-browser,
+      awww,
       ...
     }@inputs:
     let
@@ -60,6 +62,9 @@
               })
               (final: prev: {
                 zen = inputs.zen-browser.packages.${system}.default;
+              })
+              (final: prev: {
+                awww = inputs.awww.packages.${system}.awww;
               })
             ];
             home-manager = {

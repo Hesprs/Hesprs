@@ -11,7 +11,7 @@
         "window"
         "run"
       ];
-      font = "Fira Sans 11";
+      font = "Fira Sans";
       show-icons = true;
       display-drun = " ";
       display-run = " ";
