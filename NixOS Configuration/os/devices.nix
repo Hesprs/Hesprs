@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # networking
@@ -34,5 +34,12 @@
 
   services.tlp.enable = true;
   services.power-profiles-daemon.enable = false;
-  services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [ hplip ];
+  };
+
+  # touchpad
+  services.libinput.enable = false;
+  services.xserver.synaptics.enable = true;
 }

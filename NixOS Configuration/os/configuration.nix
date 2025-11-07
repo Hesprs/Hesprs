@@ -103,11 +103,13 @@
     zen
     telegram-desktop
     zoom-us
+    gradia
 
     loupe # image viewer
     showtime # video viewer
     decibels # audio player
     papers # PDF viewer
+    snapshot # camera
     gnome-calculator
 
     zip

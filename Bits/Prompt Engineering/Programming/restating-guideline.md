@@ -31,7 +31,7 @@ Your mission is to explain the question, making it easier to comprehend without 
 
 ### How can we turn input to output:
 
-(explain how can we manally operate the aforesaid input to obtain the output, make the process as detailed as possible)
+(explain how can we manually operate the aforesaid input to obtain the output, make the process as detailed as possible)
 
 ### (if there is) Other sample in/outputs
 

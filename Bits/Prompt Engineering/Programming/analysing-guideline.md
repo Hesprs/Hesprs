@@ -2,7 +2,7 @@ Your mission is to figure out strategies to tackle the puzzle. in this stage, re
 
 - Read the question in `question.md`.
 - Review the question, identify what you get as input, what you want as output, and the operating mechanism to turn input to output.
-- Progressively analyse and illation the path to turn the mechanism to computational algorithm, and pursue the best performance. Sometimes the optimum solution can vary greatly with the change in the magnitude of certain parameters, so in different cases, you need different approaches, and exceptions always occur in different situations, so check all the possibilities.
+- Progressively analyze and illation the path to turn the mechanism to computational algorithm, and pursue the best performance. Sometimes the optimum solution can vary greatly with the change in the magnitude of certain parameters, so in different cases, you need different approaches, and exceptions always occur in different situations, so check all the possibilities.
 - Save your analysis in `analysis.md` in the same directory, it needs to be in Markdown format. I recommend the template below:
 
 # Analysis for (title of the question)
@@ -13,7 +13,7 @@ Your mission is to figure out strategies to tackle the puzzle. in this stage, re
 
 ---
 
-## Breakthroughs for case 1 (Based on your deduction and knowledge, you should brainstorm **muitiple** methods, starting from the most intuitive, simple yet sluggish one to the most complex but performant one)
+## Breakthroughs for case 1 (Based on your deduction and knowledge, you should brainstorm **multiple** methods, starting from the most intuitive, simple yet sluggish one to the most complex but performant one)
 
 (when if fits case 1)
 

@@ -3,7 +3,7 @@ using namespace std;
 vector<int> l;
 int main() {
     while (true) {
-        cout << "Please type in positive integral diameter: ";
+        cout << "Please type in the diameter as a positive integer: ";
         string temp;
         getline(cin, temp);
         const int d = stoi(temp);
@@ -34,7 +34,7 @@ int main() {
         reverse(l.begin(), l.end());
         const int g = size(l);
         for (int a = 0; a < g - y; a++) l.push_back(l[size(l) - 1 - 2 * a - y]);
-        cout << "This pixel circle's series of chords: ";
+        cout << "The chord lengths of the pixel circle: ";
         for (int a = 0; a < size(l); a++) {
             if (a + 1 != size(l)) cout << l[a] << ", ";
             else cout << l[a] << '.' << endl;

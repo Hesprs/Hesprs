@@ -27,7 +27,7 @@
       exec-once = [
         "v2rayN"
         "awww-daemon"
-        "awww img ~/Pictures/Wallpapers/1.gif"
+        "awww img ~/Pictures/Wallpapers/10.jpg"
       ];
 
       env = [
@@ -41,7 +41,7 @@
         border_size = 1;
         "col.active_border" = "rgba(ffffff33)";
         "col.inactive_border" = "rgba(ffffff33)";
-        resize_on_border = false;
+        resize_on_border = true;
         layout = "dwindle";
       };
 
