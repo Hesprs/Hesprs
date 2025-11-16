@@ -28,7 +28,9 @@
     "Hēsperus",
     "Hesprs",
     "lovership",
-    "subfolders"
+    "omnikernel",
+    "subfolders",
+    "tauri"
   ],
   "terminal.integrated.stickyScroll.enabled": false,
   "[nix]": {
@@ -36,9 +38,18 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.navigationControl.enabled": false,
-  "continue.enableTabAutocomplete": true,
+  "continue.enableTabAutocomplete": false,
   "chat.disableAIFeatures": true,
   "workbench.settings.showAISearchToggle": false,
   "continue.showInlineTip": false,
-  "continue.enableNextEdit": false
+  "continue.enableNextEdit": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "editor.quickSuggestionsDelay": 0,
+  "search.searchView.keywordSuggestions": true,
+  "diffEditor.experimental.useTrueInlineView": true,
+  "editor.inlineSuggest.experimental.showOnSuggestConflict": "whenSuggestListIsIncomplete",
+  "editor.inlineSuggest.minShowDelay": 100,
+  "supermaven.enable": {
+    "*": true
+  }
 }

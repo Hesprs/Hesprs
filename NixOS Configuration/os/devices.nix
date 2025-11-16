@@ -40,6 +40,5 @@
   };
 
   # touchpad
-  services.libinput.enable = false;
-  services.xserver.synaptics.enable = true;
+  services.libinput.enable = true;
 }

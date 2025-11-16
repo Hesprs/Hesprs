@@ -16,3 +16,6 @@ lerna-debug.log*
 
 # cache
 .cache
+
+# dist
+dist
