@@ -36,16 +36,6 @@
     "when": "cursorBeforeGhostText && inlineSuggestionVisible && !accessibilityModeEnabled && !editorReadonly"
   },
   {
-    "key": "tab",
-    "command": "-continue.nextEditWindow.acceptNextEditSuggestion",
-    "when": "editorTextFocus && nextEditWindowActive && !continue.jumpDecorationVisible"
-  },
-  {
-    "key": "tab",
-    "command": "-continue.acceptJump",
-    "when": "continue.jumpDecorationVisible && editorTextFocus"
-  },
-  {
     "key": "enter",
     "command": "acceptSelectedSuggestion",
     "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"

@@ -4,7 +4,6 @@
 		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"outDir": "./dist",
-		"declarationDir": "./dist/types",
 		"strict": true,
 		"esModuleInterop": true,
 		"emitDeclarationOnly": true,
@@ -12,9 +11,9 @@
 		"forceConsistentCasingInFileNames": true,
 		"declaration": true,
 		"sourceMap": true,
-		"noEmit": false,
+		"noEmit": true,
 		"lib": ["ES2022", "DOM"]
 	},
-	"include": ["src"],
-	"exclude": ["node_modules", "eslint.config.ts", "dist"]
+	"include": ["./src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }

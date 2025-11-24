@@ -175,7 +175,7 @@
   width: unset !important;
   height: unset !important;
 }
-/* remove inticator selected terminal */
+/* remove indicator selected terminal */
 .terminal-tabs-entry::before {
   display: none !important;
 }
@@ -276,7 +276,7 @@ html {
   > div:nth-child(1) {
   z-index: 1 !important;
 }
-/* fix muitimedia preview failure */
+/* fix multimedia preview failure */
 .monaco-workbench > [data-parent-flow-to-element-id] {
   z-index: 1 !important;
   border-radius: var(--borderRadius2) !important;

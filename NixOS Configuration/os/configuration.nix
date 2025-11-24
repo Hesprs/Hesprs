@@ -62,8 +62,8 @@
 
   # services
   security.rtkit.enable = true;
-  services.flatpak.enable = true;
-  programs.dconf.enable = true;
+  programs.dconf.enable = true; # Gnome APP settings
+  programs.nix-ld.enable = true; # run external binaries
   xdg.portal = {
     enable = true;
     extraPortals = [
@@ -97,13 +97,14 @@
     codium
     wtype
     v2rayn
-    bak2.qq
+    stable.qq
     wechat
     mission-center
     zen
     telegram-desktop
     zoom-us
     gradia
+    ripgrep
 
     loupe # image viewer
     showtime # video viewer
@@ -122,11 +123,20 @@
     nodePackages_latest.nodejs
     pnpm
     nixfmt
+    cargo
+    rustc
+    gcc
+    serena
 
     awww
+
+    #  Imperative:
+    # ╭───────────────────────────────────────────────────────────────────────────────╮
+    # │ ● pnpm i -g @continuedev/cli                                                  │
+    # │   pnpm uninstall -g @continuedev/cli                                          │
+    # ╰───────────────────────────────────────────────────────────────────────────────╯
   ];
-  # | -------------- Flatpak APPs -------------- |
-  # | flatpak install com.tencent.wemeet         |
+
   fonts.packages = with pkgs; [
     (pkgs.callPackage ./fonts/SFMono { })
     (pkgs.callPackage ./fonts/SFDisplay { })

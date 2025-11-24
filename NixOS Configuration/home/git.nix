@@ -3,9 +3,11 @@
 {
   programs.git = {
     enable = true;
-    userName  = "Hēsperus";
-    userEmail = "hesprs@outlook.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name  = "Hēsperus";
+        email = "hesprs@outlook.com";
+      };
       # FOSS-friendly settings
       push.default = "simple"; # Match modern push behavior
       credential.helper = "cache --timeout=7200";

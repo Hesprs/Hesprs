@@ -1,5 +1,3 @@
-# Run: `nix-shell tauri.shell.nix`
-
 let
   pkgs = import <nixpkgs> { };
 in
@@ -8,8 +6,7 @@ pkgs.mkShell {
     pkg-config
     gobject-introspection
     cargo
-    # cargo-tauri # Optional, Only needed if Tauri doesn't work through the traditional way.
-    nodejs # Optional, this is for if you have a js frontend
+    nodePackages_latest.nodejs
   ];
 
   buildInputs = with pkgs; [
