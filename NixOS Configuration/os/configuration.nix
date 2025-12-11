@@ -140,9 +140,8 @@
   ];
 
   fonts.packages = with pkgs; [
-    (pkgs.callPackage ./fonts/SFMono { })
     (pkgs.callPackage ./fonts/SFDisplay { })
-    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
   ];
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion

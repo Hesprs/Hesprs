@@ -3,7 +3,7 @@
 window#waybar {
   all: unset;
   font-size: 16px;
-  font-family: "FiraCode Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
 }
 .modules-left {
   padding: 7px;

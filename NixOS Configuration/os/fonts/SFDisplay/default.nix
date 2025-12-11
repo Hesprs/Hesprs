@@ -1,21 +1,16 @@
-# my-custom-font.nix
 { pkgs, lib, ... }:
 
-# Replace 'my-custom-font.zip' with the path to your font file(s)
-# Note: You can use other fetchers (like fetchurl) if the font is available online.
 pkgs.stdenv.mkDerivation {
   pname = "SF-Display";
   version = "1.0"; # Set the actual version
-  src = ./sf-display.zip; # 🚨 CHANGE THIS PATH 🚨
+  src = ./sf-display.zip;
 
-  # If your source is a ZIP or other archive
   unpackPhase = ''
     runHook preUnpack
     ${pkgs.unzip}/bin/unzip $src
     runHook postUnpack
   '';
 
-  # Install the font files to the correct output location
   installPhase = ''
     runHook preInstall
     mkdir -p $out/share/fonts/truetype

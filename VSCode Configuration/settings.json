@@ -3,7 +3,7 @@
 	"window.controlsStyle": "custom",
 	"workbench.productIconTheme": "fluent-icons",
 	"workbench.iconTheme": "catppuccin-mocha",
-	"editor.fontFamily": "SF Mono",
+	"editor.fontFamily": "JetBrainsMono Nerd Font",
 	"workbench.layoutControl.enabled": false,
 	"editor.renderWhitespace": "none",
 	"editor.renderControlCharacters": false,
@@ -78,5 +78,10 @@
 	},
 	"editor.minimap.size": "fill",
 	"Lingma.methodQuickOperation": false,
-	"explorer.fileNesting.enabled": true
+	"explorer.fileNesting.enabled": true,
+	"editor.unicodeHighlight.includeStrings": false,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.enableImages": true,
+	"terminal.integrated.fontLigatures.enabled": true,
+	"editor.fontLigatures": true
 }

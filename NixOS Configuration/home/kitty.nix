@@ -7,7 +7,7 @@
 
     # 2. Configure fonts
     font = {
-      name = "SF Mono";
+      name = "JetBrainsMono Nerd Font";
       size = 12;
     };
 

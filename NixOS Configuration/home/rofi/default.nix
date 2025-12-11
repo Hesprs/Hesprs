@@ -11,7 +11,7 @@
         "window"
         "run"
       ];
-      font = "Fira Sans";
+      font = "JetBrainsMono Nerd Font";
       show-icons = true;
       display-drun = " ";
       display-run = " ";
