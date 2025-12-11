@@ -23,12 +23,12 @@ while True:
     S = 0
     for a in l: S += 2 * a
     S -= y * d
-    print ('Area of the pixel circle: ' + str(S) + '。')
+    print (f'Area of the pixel circle: {str(S)}.')
     for a in range(x): l.insert(0, l[2 * a + y])
     print ('The chord lengths of the pixel circle: ', end = '')
     for a in range(len(l)):
         if a + 1 != len(l): print (l[a], end = ',')
-        else: print (l[a], end = '。\n')
+        else: print (l[a], end = '.\n')
     for a in l:
         for b in range(int((d - a) / 2)): print ('  ', end = '')
         for b in range(a): print ('■ ', end = '')

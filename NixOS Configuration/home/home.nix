@@ -1,4 +1,4 @@
-{ lib, config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -11,6 +11,7 @@
     ./git.nix
     ./kitty.nix
     ./dconf.nix
+    ./starship.nix
   ];
 
   programs.home-manager.enable = true;

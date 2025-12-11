@@ -9,6 +9,7 @@
         email = "hesprs@outlook.com";
       };
       # FOSS-friendly settings
+      fetch.prune = "true";
       push.default = "simple"; # Match modern push behavior
       credential.helper = "cache --timeout=7200";
       init.defaultBranch = "main"; # Set default new branches to 'main'

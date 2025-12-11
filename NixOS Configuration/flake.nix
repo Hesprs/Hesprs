@@ -12,7 +12,7 @@
   };
 
   outputs =
-    {
+    inputs@{
       self,
       nixpkgs-unstable,
       nixpkgs-stable,
@@ -21,11 +21,11 @@
       awww,
       serena,
       ...
-    }@inputs:
+    }:
     let
       system = "x86_64-linux";
       pkgs-stable = import inputs.nixpkgs-stable;
-      pkgs-unstable = import inputs.nixpkgs-unstable;
+      pkgs = nixpkgs-unstable.legacyPackages.${system};
     in
     {
       nixosConfigurations.Libertas = nixpkgs-unstable.lib.nixosSystem {

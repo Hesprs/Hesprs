@@ -126,6 +126,8 @@
     cargo
     rustc
     gcc
+    javaPackages.compiler.openjdk25
+    gradle
     serena
 
     awww

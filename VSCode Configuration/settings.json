@@ -9,7 +9,6 @@
 	"editor.renderControlCharacters": false,
 	"editor.stickyScroll.enabled": false,
 	"breadcrumbs.enabled": false,
-	"editor.minimap.size": "fill",
 	"editor.minimap.renderCharacters": false,
 	"editor.fontSize": 13,
 	"explorer.confirmDelete": false,
@@ -28,7 +27,9 @@
 		"Hēsperus",
 		"Hesprs",
 		"Libertas",
+		"lifecycles",
 		"lovership",
+		"microkernel",
 		"omnikernel",
 		"Shadcn",
 		"subfolders",
@@ -61,11 +62,21 @@
 	"Lingma.PreferredLanguage for AI Chat": "English",
 	"Lingma.PreferredLanguage forCommitMessage": "English",
 	"terminal.integrated.gpuAcceleration": "on",
-	"typescript.preferences.organizeImports": {
-		"typeOrder": "auto",
-		"unicodeCollation": "ordinal"
-	},
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": "explicit"
-	}
+		"source.organizeImports.biome": "explicit",
+		"source.fixAll.biome": "explicit"
+	},
+	"editor.experimental.preferTreeSitter.typescript": true,
+	"biome.suggestInstallingGlobally": false,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"Lingma.aI Chat.webToolsInAsk/AgentMode": "Auto-execute",
+	"redhat.telemetry.enabled": false,
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
+	"editor.minimap.size": "fill",
+	"Lingma.methodQuickOperation": false,
+	"explorer.fileNesting.enabled": true
 }
