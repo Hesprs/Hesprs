@@ -1,11 +1,4 @@
 {
-  config,
-  pkgs,
-  lib,
-  ...
-}:
-
-{
   dconf.settings = {
     "org/gnome/desktop/interface".color-scheme = "prefer-dark";
     "system/proxy".mode = "none";

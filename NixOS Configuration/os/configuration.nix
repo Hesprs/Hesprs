@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  lib,
   ...
 }:
 
@@ -11,6 +10,7 @@
     ./hardware.nix
     ./devices.nix
     ./greetd.nix
+    ./stylix.nix
   ];
 
   nix = {

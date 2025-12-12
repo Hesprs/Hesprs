@@ -33,8 +33,8 @@
       nixosConfigurations.Libertas = nixpkgs-unstable.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          ./os/configuration.nix
           stylix.nixosModules.stylix
+          ./os/configuration.nix
           home-manager.nixosModules.home-manager
           {
             nixpkgs.overlays = [

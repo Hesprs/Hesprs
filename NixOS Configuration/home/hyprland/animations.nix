@@ -1,5 +1,3 @@
-{ config, pkgs, lib, ... }:
-
 {
   wayland.windowManager.hyprland.settings.animations = {
     enabled = true;

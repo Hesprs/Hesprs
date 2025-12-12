@@ -1,5 +1,3 @@
-{ config, pkgs, lib, ... }:
-
 {
   home.file = {
     ".config/waybar/colours.css".source = ./colours.css;

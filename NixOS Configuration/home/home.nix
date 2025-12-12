@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -16,7 +11,6 @@
     ./git.nix
     ./kitty.nix
     ./dconf.nix
-    ./stylix.nix
     ./starship.nix
   ];
 
