@@ -1,4 +1,9 @@
-{ pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   imports = [
@@ -11,6 +16,7 @@
     ./git.nix
     ./kitty.nix
     ./dconf.nix
+    ./stylix.nix
     ./starship.nix
   ];
 
@@ -29,7 +35,7 @@
     pointerCursor = {
       gtk.enable = true;
       package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Classic"; 
+      name = "Bibata-Modern-Classic";
       size = 24;
     };
   };

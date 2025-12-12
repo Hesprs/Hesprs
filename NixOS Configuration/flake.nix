@@ -9,6 +9,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     awww.url = "git+https://codeberg.org/LGFae/awww";
     serena.url = "github:oraios/serena";
+    stylix.url = "github:nix-community/stylix";
   };
 
   outputs =
@@ -20,6 +21,7 @@
       zen-browser,
       awww,
       serena,
+      stylix,
       ...
     }:
     let
@@ -32,6 +34,7 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./os/configuration.nix
+          stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           {
             nixpkgs.overlays = [

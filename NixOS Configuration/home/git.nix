@@ -1,11 +1,16 @@
-{ ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   programs.git = {
     enable = true;
     settings = {
       user = {
-        name  = "Hēsperus";
+        name = "Hēsperus";
         email = "hesprs@outlook.com";
       };
       # FOSS-friendly settings

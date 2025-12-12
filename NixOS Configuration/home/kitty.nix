@@ -1,4 +1,9 @@
-{ ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   # 1. Enable the Home Manager Kitty module

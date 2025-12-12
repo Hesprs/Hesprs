@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }:
 
@@ -111,7 +112,9 @@
     decibels # audio player
     papers # PDF viewer
     snapshot # camera
+    nautilus # file manager
     gnome-calculator
+    brightnessctl # screen brightness control
 
     zip
 
