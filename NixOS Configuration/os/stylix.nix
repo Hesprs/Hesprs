@@ -3,7 +3,29 @@
 {
   stylix = {
     enable = true;
-    polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    targets = {
+      rofi.enable = false;
+    };
+    fonts = {
+      serif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Serif";
+      };
+
+      sansSerif = {
+        name = "SF Pro Display";
+      };
+
+      monospace = {
+        package = pkgs.dejavu_fonts;
+        name = "JetBrains Mono Nerd Font";
+      };
+
+      emoji = {
+        package = pkgs.noto-fonts-color-emoji;
+        name = "Noto Color Emoji";
+      };
+    };
   };
 }

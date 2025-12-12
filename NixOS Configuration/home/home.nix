@@ -11,6 +11,7 @@
     ./git.nix
     ./kitty.nix
     ./dconf.nix
+    ./stylix.nix
     ./starship.nix
   ];
 
