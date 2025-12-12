@@ -11,6 +11,7 @@
     ./devices.nix
     ./greetd.nix
     ./stylix.nix
+    ./mysql.nix
   ];
 
   nix = {
@@ -132,6 +133,7 @@
     javaPackages.compiler.openjdk25
     gradle
     serena
+    mycli
 
     awww
 
