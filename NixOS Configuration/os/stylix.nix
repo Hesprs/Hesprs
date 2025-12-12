@@ -3,10 +3,7 @@
 {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    targets = {
-      rofi.enable = false;
-    };
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/0x96f.yaml";
     fonts = {
       serif = {
         package = pkgs.dejavu_fonts;

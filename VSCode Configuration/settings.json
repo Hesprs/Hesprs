@@ -83,5 +83,6 @@
 	"terminal.integrated.enableImages": true,
 	"terminal.integrated.fontLigatures.enabled": true,
 	"editor.fontLigatures": true,
-	"editor.fontSize": 13
+	"editor.fontSize": 13,
+	"window.confirmSaveUntitledWorkspace": false
 }
