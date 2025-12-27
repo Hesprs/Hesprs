@@ -67,9 +67,6 @@
 	},
 	"editor.experimental.preferTreeSitter.typescript": true,
 	"biome.suggestInstallingGlobally": false,
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
 	"Lingma.aI Chat.webToolsInAsk/AgentMode": "Auto-execute",
 	"redhat.telemetry.enabled": false,
 	"[java]": {

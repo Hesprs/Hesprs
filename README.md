@@ -24,22 +24,22 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
   ![Figma](https://img.shields.io/badge/Figma-black?style=flat&logo=figma)
   ![Blender](https://img.shields.io/badge/Blender-black?style=flat&logo=blender)
   
-- 🌱 I'm learning:
+- 🌱 I'm interested in:
   ![Tauri](https://img.shields.io/badge/Tauri-black?style=flat&logo=tauri)
+  ![Web3](https://img.shields.io/badge/Web3-black?style=flat&logo=web3dotjs)
   ![Rust](https://img.shields.io/badge/Rust-black?style=flat&logo=rust)
+
+- 📚 I'm learning:
   ![Java](https://img.shields.io/badge/Java-black?style=flat&logo=coffeescript)
   ![MariaDB](https://img.shields.io/badge/MariaDB-black?style=flat&logo=mariadb&logoColor=003545)
 
 - 📫 New friend - **hesprs@outlook.com**
-
-<!--<br>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=hesprs&show_icons=true&theme=dark" style="height: 160px;"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesprs&layout=compact&theme=dark&hide=mdx" style="height: 160px;"/>
 </div>
 
--->
 <br>
 
 <div align="right">2025 • Hēsperus</div>

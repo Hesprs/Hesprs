@@ -1,14 +1,22 @@
 { pkgs, ... }:
 
+let
+  statsConfig = {
+    db = "Aequitas";
+    user = "hesprs";
+  };
+in
 {
   services.mysql = {
     enable = true;
     package = pkgs.mariadb;
-    ensureDatabases = [ "db" ];  # optional: auto-create databases
+    ensureDatabases = [ statsConfig.db ];
     ensureUsers = [
       {
-        name = "hesprs";
-        ensurePermissions = { "db.*" = "ALL PRIVILEGES"; };
+        name = "${statsConfig.user}";
+        ensurePermissions = {
+          "${statsConfig.db}.*" = "ALL PRIVILEGES";
+        };
       }
     ];
   };
