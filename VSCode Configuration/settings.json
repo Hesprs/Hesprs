@@ -72,6 +72,11 @@
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java"
 	},
+	"[vue]": {
+		"editor.codeActionsOnSave": {},
+		"editor.formatOnSave": false,
+		"editor.formatOnPaste": false,
+	},
 	"editor.minimap.size": "fill",
 	"Lingma.methodQuickOperation": false,
 	"explorer.fileNesting.enabled": true,
@@ -81,5 +86,6 @@
 	"terminal.integrated.fontLigatures.enabled": true,
 	"editor.fontLigatures": true,
 	"editor.fontSize": 13,
-	"window.confirmSaveUntitledWorkspace": false
+	"window.confirmSaveUntitledWorkspace": false,
+	"git.replaceTagsWhenPull": true,
 }

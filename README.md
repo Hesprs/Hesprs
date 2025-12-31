@@ -42,4 +42,4 @@ Hello 🐱 I'm Hēsperus, a high school student, fervent to turn my ideas into 
 
 <br>
 
-<div align="right">2025 • Hēsperus</div>
+<div align="right">2026 • Hēsperus</div>
