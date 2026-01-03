@@ -42,6 +42,9 @@
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer"
 	},
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
 	"security.workspace.trust.untrustedFiles": "open",
 	"workbench.navigationControl.enabled": false,
 	"chat.disableAIFeatures": true,
@@ -65,18 +68,9 @@
 		"source.organizeImports.biome": "explicit",
 		"source.fixAll.biome": "explicit"
 	},
-	"editor.experimental.preferTreeSitter.typescript": true,
 	"biome.suggestInstallingGlobally": false,
 	"Lingma.aI Chat.webToolsInAsk/AgentMode": "Auto-execute",
 	"redhat.telemetry.enabled": false,
-	"[java]": {
-		"editor.defaultFormatter": "redhat.java"
-	},
-	"[vue]": {
-		"editor.codeActionsOnSave": {},
-		"editor.formatOnSave": false,
-		"editor.formatOnPaste": false,
-	},
 	"editor.minimap.size": "fill",
 	"Lingma.methodQuickOperation": false,
 	"explorer.fileNesting.enabled": true,
@@ -88,4 +82,10 @@
 	"editor.fontSize": 13,
 	"window.confirmSaveUntitledWorkspace": false,
 	"git.replaceTagsWhenPull": true,
+	"editor.experimental.treeSitterTelemetry": true,
+	"diffEditor.experimental.showMoves": true,
+	"extensions.experimental.deferredStartupFinishedActivation": true,
+	"typescript.experimental.useTsgo": true,
+    "editor.detectIndentation": false,
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
