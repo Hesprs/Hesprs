@@ -8,8 +8,9 @@
   ],
   "lastChangelogVersion": "0.84.1",
   "theme": "dark",
-  "defaultProvider": "xai",
-  "defaultModel": "grok-4.6",
-  "defaultThinkingLevel": "medium",
-  "hideThinkingBlock": false
+  "defaultProvider": "deepseek",
+  "defaultModel": "deepseek-v4-pro",
+  "defaultThinkingLevel": "high",
+  "hideThinkingBlock": false,
+  "tuiMode": "fullscreen"
 }

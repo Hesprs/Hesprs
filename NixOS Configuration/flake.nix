@@ -56,6 +56,7 @@
                     blur = true;
                   };
                   classin = final.callPackage ./packages/classin.nix { };
+                  bun = final.callPackage ./packages/bun.nix { };
                 })
                 (import ./packages/obsidian.nix)
                 (import ./packages/vscodium)
