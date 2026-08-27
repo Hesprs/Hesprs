@@ -1,6 +1,6 @@
-local terminal = "ghostty"
-local file_manager = "nautilus"
-local browser = "zen-beta"
+local terminal = "uwsm app -- ghostty"
+local file_manager = "uwsm app -- nautilus"
+local browser = "uwsm app -- zen-beta"
 local menu = "noctalia msg panel-toggle launcher"
 local main_mod = "SUPER"
 

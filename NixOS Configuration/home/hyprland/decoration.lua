@@ -14,7 +14,7 @@ hl.config({
             vibrancy = 0.3,
             ignore_opacity = true,
             xray = true,
-            noise = 0.06,
+            noise = 0.04,
         },
 
         shadow = {

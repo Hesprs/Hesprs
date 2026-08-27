@@ -10,7 +10,7 @@
 }:
 
 let
-  pname = "MacTahoe-icon-theme";
+  pname = "mactahoe-icon-theme";
 in
 lib.checkListOfEnum "${pname}: theme variants"
   [

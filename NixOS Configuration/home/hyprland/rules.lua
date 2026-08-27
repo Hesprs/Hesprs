@@ -5,24 +5,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "float-blueman-manager",
-    match = { title = "^(blueman-manager)$" },
-    float = true,
-})
-
-hl.window_rule({
-    name = "float-nm-connection-editor",
-    match = { title = "^(nm-connection-editor)$" },
-    float = true,
-})
-
-hl.window_rule({
-    name = "float-qalculate-gtk",
-    match = { title = "^(qalculate-gtk)$" },
-    float = true,
-})
-
-hl.window_rule({
     name = "picture-in-picture",
     match = { title = "^(Picture-in-Picture)$" },
     float = true,

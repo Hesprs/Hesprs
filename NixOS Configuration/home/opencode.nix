@@ -16,6 +16,7 @@
         deepseek.options.baseURL = "https://api.a6api.com/v1";
         google.options.baseURL = "https://api.a6api.com/v1";
         xai.options.baseURL = "https://api.a6api.com/v1";
+        zhipuai-coding-plan.options.baseURL = "https://api.a6api.com/v1";
       };
 
       agent = {
