@@ -9,7 +9,6 @@
     ./ssh
     ./vscode
     ./noctalia
-    ./pi
     ./secrets.nix
     ./npm.nix
     ./git.nix
@@ -22,6 +21,7 @@
 
   programs.home-manager.enable = true;
   programs.fastfetch.enable = true;
+  programs.pi-coding-agent.enable = true;
   services.dunst.enable = true;
 
   home = {
