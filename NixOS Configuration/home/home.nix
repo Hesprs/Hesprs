@@ -16,7 +16,6 @@
     ./dconf.nix
     ./gtk.nix
     ./starship.nix
-    ./opencode.nix
   ];
 
   programs.home-manager.enable = true;
