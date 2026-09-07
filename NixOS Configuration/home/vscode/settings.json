@@ -189,4 +189,5 @@
 	"explorer.confirmPasteNative": false,
 	"workbench.colorTheme": "Expo Dark",
 	"nix.hiddenLanguageServerErrors": ["-32001"],
+	"terminal.integrated.cursorWidth": 2,
 }

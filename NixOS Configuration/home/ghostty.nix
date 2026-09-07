@@ -21,6 +21,8 @@
       window-padding-balance = true;
       notify-on-command-finish-action = "no-bell,no-notify";
       confirm-close-surface = false;
+      cursor-style = "bar";
+      adjust-cursor-thickness = 1;
     };
   };
 }

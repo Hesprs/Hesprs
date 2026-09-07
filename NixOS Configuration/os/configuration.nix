@@ -19,7 +19,9 @@
       experimental-features = "nix-command flakes";
       flake-registry = "";
       nix-path = config.nix.nixPath;
-      extra-substituters = [ "https://noctalia.cachix.org" ];
+      extra-substituters = [
+        "https://noctalia.cachix.org"
+      ];
       extra-trusted-public-keys = [
         "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
       ];
@@ -74,6 +76,7 @@
   environment.systemPackages = with pkgs; [
     # applications
     thunderbird # email client
+    betterbird
     obsidian # note-taking
     v2rayn # VPN client
     vscodium # code editor
@@ -84,6 +87,7 @@
     libreoffice-qt-fresh # office suite
     gh # GitHub CLI
     classin
+    opencode
 
     # system utilities
     loupe # image viewer

@@ -44,6 +44,7 @@
                   };
                   zen = inputs.zen-browser.packages.${system}.default;
                   sf-pro-display = final.callPackage ./packages/sf-pro-display { };
+                  betterbird = final.callPackage ./packages/betterbird { };
                   noctalia = inputs.noctalia.packages.${system}.default;
                   mactahoe-icon-theme = final.callPackage ./packages/icon-theme.nix {
                     themeVariants = [
@@ -56,6 +57,7 @@
                     blur = true;
                   };
                   classin = final.callPackage ./packages/classin.nix { };
+                  lark = final.callPackage ./packages/lark.nix { };
                   bun = final.callPackage ./packages/bun.nix { };
                 })
                 (import ./packages/obsidian.nix)
