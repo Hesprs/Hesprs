@@ -37,7 +37,7 @@ Hello 🙋 I'm Hēsperus:
 🌱 I'm learning:
 ![Crypto](https://img.shields.io/badge/Crypto-black?style=flat&logo=web3dotjs)
 
-- 📫 Contact Me: **hesprs@outlook.com**
+- 📫 Contact Me: **hesprs@yandex.com**
 
 <div align="center">
   <img src="./Assets/stats.svg" style="height: 160px;"/>

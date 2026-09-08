@@ -75,7 +75,6 @@
   #packages
   environment.systemPackages = with pkgs; [
     # applications
-    thunderbird # email client
     betterbird
     obsidian # note-taking
     v2rayn # VPN client
@@ -87,7 +86,6 @@
     libreoffice-qt-fresh # office suite
     gh # GitHub CLI
     classin
-    opencode
 
     # system utilities
     loupe # image viewer

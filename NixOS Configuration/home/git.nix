@@ -3,8 +3,8 @@
     enable = true;
     settings = {
       user = {
-        name = "Hēsperus";
-        email = "hesprs@outlook.com";
+        name = "hesprs";
+        email = "190185753+hesprs@users.noreply.github.com";
       };
       fetch.prune = "true";
       push.default = "simple";

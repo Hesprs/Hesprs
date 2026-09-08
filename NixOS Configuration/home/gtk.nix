@@ -12,7 +12,10 @@ in
   gtk = {
     enable = true;
     inherit theme;
-    gtk3.theme = theme;
+    gtk3 = {
+      theme = theme;
+      extraConfig.gtk-decoration-layout = "menu:";
+    };
     gtk4.theme = theme;
     colorScheme = "dark";
   };

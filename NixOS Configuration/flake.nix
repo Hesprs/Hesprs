@@ -44,7 +44,7 @@
                   };
                   zen = inputs.zen-browser.packages.${system}.default;
                   sf-pro-display = final.callPackage ./packages/sf-pro-display { };
-                  betterbird = final.callPackage ./packages/betterbird { };
+                  betterbird = final.callPackage ./packages/betterbird.nix { };
                   noctalia = inputs.noctalia.packages.${system}.default;
                   mactahoe-icon-theme = final.callPackage ./packages/icon-theme.nix {
                     themeVariants = [

@@ -12,6 +12,9 @@
   gdk-pixbuf,
   glib,
   gtk3,
+  libcanberra,
+  libnotify,
+  libpulseaudio,
   libGL,
   libX11,
   libXcomposite,
@@ -45,6 +48,9 @@ let
     gdk-pixbuf
     glib
     gtk3
+    libcanberra
+    libnotify
+    libpulseaudio
     libGL
     libX11
     libXcomposite
@@ -82,15 +88,35 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   installPhase = ''
     runHook preInstall
 
-    install -d "$out/lib" "$out/bin"
+    install -d "$out/lib" "$out/bin" "$out/share/applications"
     cp -r . "$out/lib/betterbird"
 
     makeWrapper "$out/lib/betterbird/betterbird" "$out/bin/betterbird" \
       --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath runtimeLibraries}" \
-      --prefix PATH : "${lib.makeBinPath [ xdg-utils ]}"
+      --prefix PATH : "${lib.makeBinPath [ xdg-utils ]}" \
+      --set MOZ_APP_LAUNCHER betterbird \
+      --set MOZ_LEGACY_PROFILES 1 \
+      --set MOZ_ALLOW_DOWNGRADE 1
 
     install -Dm644 "$out/lib/betterbird/chrome/icons/default/default128.png" \
       "$out/share/icons/hicolor/128x128/apps/betterbird.png"
+
+    cat > "$out/share/applications/betterbird.desktop" <<'EOF'
+    [Desktop Entry]
+    Categories=Network;Chat;Email;Feed;GTK;News
+    Comment=Read and write e-mails or RSS feeds, or manage tasks on calendars.
+    Exec=betterbird %U
+    GenericName=Email Client
+    Icon=betterbird
+    Keywords=mail;email;e-mail;messages;rss;calendar;address book;addressbook;chat
+    MimeType=message/rfc822;x-scheme-handler/mailto;text/calendar;text/x-vcard
+    Name=Betterbird
+    StartupNotify=true
+    StartupWMClass=betterbird
+    Terminal=false
+    Type=Application
+    Version=1.5
+    EOF
 
     runHook postInstall
   '';
